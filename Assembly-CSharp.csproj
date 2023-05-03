@@ -57,15 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Player\Player.cs" />
+    <Compile Include="Assets\Inventory\ItemScripts\WaterBottleText.cs" />
     <Compile Include="Assets\Player\Mouse_Look.cs" />
     <Compile Include="Assets\Player\Player_Movement.cs" />
+    <Compile Include="Assets\Inventory\Collector.cs" />
+    <Compile Include="Assets\Inventory\ItemScripts\WaterBottle.cs" />
+    <Compile Include="Assets\Inventory\ICollectible.cs" />
     <Compile Include="Assets\Main Menu\MainMenu.cs" />
     <Compile Include="Assets\Catbot\Catbot.cs" />
     <Compile Include="Assets\NPCFollow.cs" />
-    <Compile Include="Assets\Inventory\Collector.cs" />
-    <Compile Include="Assets\Inventory\ICollectible.cs" />
-    <Compile Include="Assets\Inventory\ItemScripts\WaterBottle.cs" />
-    <Compile Include="Assets\Inventory\ItemScripts\WaterBottleText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
