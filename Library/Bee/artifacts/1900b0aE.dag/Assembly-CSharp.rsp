@@ -358,6 +358,7 @@
 "Assets/Catbot/Catbot.cs"
 "Assets/Inventory/Collector.cs"
 "Assets/Inventory/ICollectible.cs"
+"Assets/Inventory/InventoryTabs.cs"
 "Assets/Inventory/ItemScripts/WaterBottle.cs"
 "Assets/Inventory/ItemScripts/WaterBottleText.cs"
 "Assets/Main Menu/MainMenu.cs"
