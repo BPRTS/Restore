@@ -58,11 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Inventory\ScriptableObjects\Items\Scripts\ItemObject.cs" />
     <Compile Include="Assets\Player\Player.cs" />
+    <Compile Include="Assets\OxygenBehaviour.cs" />
     <Compile Include="Assets\Inventory\PlayerInvBehavior.cs" />
     <Compile Include="Assets\Player\Mouse_Look.cs" />
     <Compile Include="Assets\Inventory\ScriptableObjects\Items\Scripts\BasicObject.cs" />
     <Compile Include="Assets\Player\Player_Movement.cs" />
     <Compile Include="Assets\Inventory\InventoryTabs.cs" />
+    <Compile Include="Assets\WarningManager.cs" />
     <Compile Include="Assets\Inventory\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Main Menu\MainMenu.cs" />
     <Compile Include="Assets\Inventory\ScriptableObjects\Items\Scripts\RefinedObject.cs" />
@@ -70,8 +72,6 @@
     <Compile Include="Assets\Catbot\Catbot.cs" />
     <Compile Include="Assets\Inventory\DisplayInventory.cs" />
     <Compile Include="Assets\NPCFollow.cs" />
-    <Compile Include="Assets\OxygenBehaviour.cs" />
-    <Compile Include="Assets\WarningManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -348,18 +348,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
