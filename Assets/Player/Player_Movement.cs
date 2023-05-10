@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -18,6 +20,11 @@ public class Player_Movement : MonoBehaviour
 
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+
+    public bool isBreathing = false;
+    public Slider oxygenBar;
+
+    public WarningManager warningManager;
 
     public void Awake()
     {
@@ -71,5 +78,22 @@ public class Player_Movement : MonoBehaviour
         //{
         //    controller.transform.position = new Vector3(17.31f, 12.58f, 40.94f);
         //}
+
+        if(!isBreathing)
+        {
+            oxygenBar.value -= 0.001f;
+        }
+        if(isBreathing)
+        {
+            oxygenBar.value += 0.015f;
+        }
+
+        //TODO
+        //if(oxygenBar.value<0.9f)
+         //{
+           //StartCoroutine(warningManager.OxygenDrain());
+        // }
     }
+
+
 }
