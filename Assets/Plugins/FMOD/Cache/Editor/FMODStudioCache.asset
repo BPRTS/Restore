@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5679991307845571757
+--- !u!114 &-8385564580099426375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,13 +12,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Cat_Bank.bank
   m_EditorClassIdentifier: 
-  Path: ../../FMOD/Bottle tests/Build/Desktop/Cat_Bank.bank
+  Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
-  lastModified: 638192454188396148
+  lastModified: 638193248497440274
   FileSizes:
   - Name: Desktop
     Value: 17760
+  Exists: 1
+--- !u!114 &-7128617541098206906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Restore Audio/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638193248497440274
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-5667104308102958027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638193248497450275
+  FileSizes:
+  - Name: Desktop
+    Value: 894
   Exists: 1
 --- !u!114 &-5017035461511726887
 MonoBehaviour:
@@ -39,7 +79,7 @@ MonoBehaviour:
     Data3: 807512968
     Data4: -26313502
   Banks:
-  - {fileID: -5679991307845571757}
+  - {fileID: -8385564580099426375}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -47,46 +87,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2923528671779995388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD/Bottle tests/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638192454187393897
-  FileSizes:
-  - Name: Desktop
-    Value: 894
-  Exists: 1
---- !u!114 &-2325508808888719007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD/Bottle tests/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638192454187383203
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
 --- !u!114 &-723597751631200638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
     Data3: -274835528
     Data4: -1754989400
   Banks:
-  - {fileID: -5679991307845571757}
+  - {fileID: -8385564580099426375}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -127,21 +127,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2923528671779995388}
-  - {fileID: 7201519032112355466}
-  - {fileID: -5679991307845571757}
-  - {fileID: -2325508808888719007}
+  - {fileID: -5667104308102958027}
+  - {fileID: 7769600070913938201}
+  - {fileID: -8385564580099426375}
+  - {fileID: -7128617541098206906}
   EditorEvents:
   - {fileID: -723597751631200638}
   - {fileID: -5017035461511726887}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2325508808888719007}
+  - {fileID: -7128617541098206906}
   StringsBanks:
-  - {fileID: -2923528671779995388}
-  cacheTime: 638192454188396148
+  - {fileID: -5667104308102958027}
+  cacheTime: 638193248497450275
   cacheVersion: 131603
---- !u!114 &7201519032112355466
+--- !u!114 &7769600070913938201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,10 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Bank A.bank
   m_EditorClassIdentifier: 
-  Path: ../../FMOD/Bottle tests/Build/Desktop/Bank A.bank
+  Path: FMOD/Restore Audio/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638192454187357631
+  lastModified: 638193248497440274
   FileSizes:
   - Name: Desktop
     Value: 494

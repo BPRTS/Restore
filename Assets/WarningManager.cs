@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class WarningManager : MonoBehaviour
 {
 
-    public RawImage warning;
+    public GameObject warning;
     private string text;
 
     // Start is called before the first frame update
-   IEnumerator OxygenDrain()
+   public IEnumerator Warning(string text)
     {
-        text = "Warning! You are leaving the Safe Zone.";
-        warning.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
+        warning.SetActive(true);
+        warning.GetComponent<TextMeshProUGUI>().text = text;
         //warning.GetComponent<RawImage>().enabled = true;
         //warning.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = true;
 
@@ -22,7 +22,7 @@ public class WarningManager : MonoBehaviour
 
         yield return new WaitForSeconds(5);
 
-        //TODO: Disable the warning
+        warning.SetActive(false);
 
     }
 }

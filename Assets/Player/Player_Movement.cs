@@ -24,7 +24,7 @@ public class Player_Movement : MonoBehaviour
     public bool isBreathing = false;
     public Slider oxygenBar;
 
-    public WarningManager warningManager;
+//    public WarningManager warningManager;
 
     public void Awake()
     {
@@ -89,10 +89,10 @@ public class Player_Movement : MonoBehaviour
         }
 
         //TODO
-        //if(oxygenBar.value<0.9f)
+       // if (oxygenBar.value < 0.9f && oxygenBar.value > 0.85f && isBreathing == false)
          //{
-           //StartCoroutine(warningManager.OxygenDrain());
-        // }
+           //StartCoroutine(warningManager.Warning("Warning! You are leaving the Safe Zone."));
+       // }
     }
 
 
