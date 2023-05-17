@@ -27,16 +27,14 @@ public class OxygenBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if(other.name == "Player")
         {
             playerScript.isBreathing = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        Debug.Log("Exit");
+    private void OnTriggerExit(Collider other)    {
+
         if(other.name == "Player")
         {
             playerScript.isBreathing = false;

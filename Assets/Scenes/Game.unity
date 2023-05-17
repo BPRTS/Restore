@@ -1549,7 +1549,7 @@ MonoBehaviour:
   controller: {fileID: 721652002}
   groundCheck: {fileID: 829373309}
   speed: 12
-  gravity: -9.81
+  gravity: 0
   jumpHeight: 3
   groundDistance: 0.4
   groundMask:
@@ -2907,6 +2907,7 @@ MonoBehaviour:
   player: {fileID: 721652003}
   materialCost: 0
   timeToBuild: 0
+  targetSize: 78
   rebuilt: 0
 --- !u!4 &1127479058
 Transform:
@@ -4697,8 +4698,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671126712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57, y: 11.3, z: 83.9}
-  m_LocalScale: {x: 124.140724, y: 124.140724, z: 124.140724}
+  m_LocalPosition: {x: 37.5, y: 8.5, z: 71.8}
+  m_LocalScale: {x: 1.6323892, y: 1.6323892, z: 1.6323892}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
