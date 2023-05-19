@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed0462a2dc1d6f49a2b2b7705e00269, type: 3}
-  m_Name: Inventory
+  m_Script: {fileID: 11500000, guid: 58b89d18d1a964241be5a6d6111ffcf5, type: 3}
+  m_Name: Twine
   m_EditorClassIdentifier: 
-  savePath: /inventory.Save
-  database: {fileID: 11400000, guid: b62b6960e6ea0b4439e1d67726a0fb68, type: 2}
-  Container: []
+  iconPrefab: {fileID: 3567826862533489019, guid: 685ba3eba29ae81418b8c9b0cff8e131, type: 3}
+  type: 1
+  description: 
