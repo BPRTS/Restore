@@ -17,7 +17,7 @@ public class OxygenBuilding : MonoBehaviour
     public float targetSize = 78f;
     // public Item[] itemsNeeded;
 
-    public bool rebuilt;
+    public bool rebuilt = false;
 
 
     private bool isCoroutineExecuting = false;
@@ -33,17 +33,18 @@ public class OxygenBuilding : MonoBehaviour
     void Update()
     {
 
-        if (rebuilt)
+        if (!rebuilt)
         {
-            this.transform.GetChild(0).gameObject.SetActive(false);
+            this.transform.GetChild(0).gameObject.SetActive(true);
         }
-        else if(!rebuilt)
+        else if(rebuilt)
         {
             this.transform.GetChild(1).gameObject.SetActive(true);
+            this.transform.GetChild(0).gameObject.SetActive(false);
         }
         if(Vector3.Distance(player.position,transform.position)<12f && !rebuilt)
         {
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 StartCoroutine(Build(timeToBuild));
                 
