@@ -10,10 +10,11 @@ public class Item : MonoBehaviour
 
     private void Update()
     {
-        var floatText = transform.Find("CollectFloatText");
+        var floatText = transform.Find("FloatingText");
         if (nearPlayer)
         {
             floatingText.SetActive(true);
+           
         }
         else
         {

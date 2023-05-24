@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 165467157644121448, guid: 34131b455c73a054e930a1a299f36ebc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 48ef2bed694d108428e43363a9015775, type: 3}
+      objectReference: {fileID: 21300000, guid: a4ef355aabcd0b94a9f9c8a51cb98394, type: 3}
     - target: {fileID: 1536586519428135592, guid: 34131b455c73a054e930a1a299f36ebc, type: 3}
       propertyPath: m_text
       value: Basic Panel
