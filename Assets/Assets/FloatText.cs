@@ -31,7 +31,9 @@ public class FloatText : MonoBehaviour
 
         // ALWAYS FOLLOW OBJECT POSITION
         // probably overkill since our objects are static?
-        transform.position = collectObject.position + offset;
-
+        if (collectObject)
+        {
+            transform.position = collectObject.position + offset;
+        }
     }
 }
