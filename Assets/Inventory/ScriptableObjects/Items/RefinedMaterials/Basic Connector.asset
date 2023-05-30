@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b89d18d1a964241be5a6d6111ffcf5, type: 3}
   m_Name: Basic Connector
   m_EditorClassIdentifier: 
-  iconPrefab: {fileID: 3771589674105221463, guid: 58dec218f64b103418a941bcc466833c, type: 3}
+  itemName: 
+  Id: 6
+  uiDisplay: {fileID: 21300000, guid: a80ebce86faad844fbf09b3a27553f87, type: 3}
   type: 1
   description: 

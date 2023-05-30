@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 001e905817927cc4e8583ba052ee9d87, type: 2}
+  itemName: Wood
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   nearPlayer: 0
   floatingText: {fileID: 1659764790064987049}

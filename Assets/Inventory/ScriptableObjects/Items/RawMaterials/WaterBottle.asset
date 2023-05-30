@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d11ba5f967d714fa51368661f2df4a, type: 3}
   m_Name: WaterBottle
   m_EditorClassIdentifier: 
-  iconPrefab: {fileID: 3329951418370653734, guid: 8786341726abc13489721136004b9615, type: 3}
+  itemName: Water Bottle
+  Id: 4
+  uiDisplay: {fileID: 21300000, guid: ce93da4ac3b59204c813d478b2e060c7, type: 3}
   type: 0
   description: Waterbottle!

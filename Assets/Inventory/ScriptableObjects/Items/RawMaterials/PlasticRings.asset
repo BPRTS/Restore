@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d11ba5f967d714fa51368661f2df4a, type: 3}
   m_Name: PlasticRings
   m_EditorClassIdentifier: 
-  iconPrefab: {fileID: 5844171431302107637, guid: ea975db161a0bf840bd05985238b4bc7, type: 3}
+  itemName: Plastic Rings
+  Id: 2
+  uiDisplay: {fileID: 21300000, guid: c991ad3b9ea3f6e418cf857eb46211a1, type: 3}
   type: 0
   description: Plastic rings that used to hold things together. Now they kill birds.

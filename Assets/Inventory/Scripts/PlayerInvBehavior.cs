@@ -12,7 +12,7 @@ public class PlayerInvBehavior : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        var item = other.GetComponent<Item>();
+        var item = other.GetComponent<GroundItem>();
         if (item)
         {
             item.nearPlayer = true;
@@ -24,7 +24,7 @@ public class PlayerInvBehavior : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
-        var item = other.GetComponent<Item>();
+        var item = other.GetComponent<GroundItem>();
         if (item)
         {
             item.nearPlayer = false;
@@ -49,6 +49,6 @@ public class PlayerInvBehavior : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        inventory.Container.Clear();
+        inventory.Container.Items.Clear();
     }
 }

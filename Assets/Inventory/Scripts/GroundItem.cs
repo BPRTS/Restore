@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class GroundItem : MonoBehaviour
 {
     public ItemObject item;
     public InventoryObject inventory;
@@ -26,11 +26,11 @@ public class Item : MonoBehaviour
     public void itemPickup()
     {
 
-        var item = GetComponent<Item>();
+        var item = GetComponent<GroundItem>();
 
         if (item && item.nearPlayer)
         {
-            inventory.AddItem(item.item, 1);
+            inventory.AddItem(new Item (item.item), 1);
             Destroy(item.gameObject);
             Destroy(floatingText);
         }

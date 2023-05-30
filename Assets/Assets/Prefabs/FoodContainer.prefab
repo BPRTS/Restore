@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: fb559a029e82a2649b4d5acef46564cf, type: 2}
+  itemName: Food Container
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   nearPlayer: 0
   floatingText: {fileID: 3890055085462464995}

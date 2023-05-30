@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: e717a89abc6999644be0b028126b1c43, type: 2}
+  itemName: Water Bottle
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   nearPlayer: 0
   floatingText: {fileID: 8543081766184421269}

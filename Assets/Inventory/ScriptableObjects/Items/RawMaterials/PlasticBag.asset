@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d11ba5f967d714fa51368661f2df4a, type: 3}
   m_Name: PlasticBag
   m_EditorClassIdentifier: 
-  iconPrefab: {fileID: 1453792213581136072, guid: 822ef9dd2c86bcc498e987501a6298b8, type: 3}
+  itemName: Plastic Bag
+  Id: 1
+  uiDisplay: {fileID: 21300000, guid: c04a5d19b8ef22b4ca5bdc6cb73fbe49, type: 3}
   type: 0
   description: 
