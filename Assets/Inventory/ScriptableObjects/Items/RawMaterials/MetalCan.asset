@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58b89d18d1a964241be5a6d6111ffcf5, type: 3}
-  m_Name: Twine
+  m_Script: {fileID: 11500000, guid: 75d11ba5f967d714fa51368661f2df4a, type: 3}
+  m_Name: MetalCan
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3772619299722595891, guid: 4ce562e604bd713408d6e3af3ec986a1, type: 3}
-  type: 1
+  itemName: 
+  Id: 6
+  uiDisplay: {fileID: 21300000, guid: 3b4a4ff95fa14b74b822a6be8a91b530, type: 3}
+  type: 0
   description: 

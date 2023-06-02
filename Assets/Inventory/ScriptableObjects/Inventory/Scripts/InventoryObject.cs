@@ -9,10 +9,11 @@ using System.Runtime.Serialization;
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class InventoryObject : ScriptableObject
 {
+
     public string savePath;
     public ItemDatabaseObject database;
     public Inventory Container;
-    
+
     public void AddItem(Item _item, int _amount)
     {
 
@@ -26,7 +27,23 @@ public class InventoryObject : ScriptableObject
         }
         Container.Items.Add(new InventorySlot(_item.Id, _item, _amount));
     }
+    /*    public void RemoveItem(Item _item, int _amount)
+        {
 
+            for (int i = 0; i < Container.Items.Count; i++)
+            {
+                if (Container.Items[i].item.Id == _item.Id)
+                {
+                    if(Container.Items[i].amount > _amount)
+                    {
+                        Container.Items[i].RemoveAmount(_amount);
+                    }
+                    return;
+                }
+            }*/
+    /*Container.Items.Remove(new InventorySlot(_item.Id, _item, _amount));*/
+    /*    }*/
+    #region Save Functionality
     [ContextMenu("Save")]
     public void Save()
     {
@@ -38,7 +55,7 @@ public class InventoryObject : ScriptableObject
     [ContextMenu("Load")]
     public void Load()
     {
-        if(File.Exists(string.Concat(Application.persistentDataPath, savePath)))
+        if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
         {
             IFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open, FileAccess.Read);
@@ -51,12 +68,34 @@ public class InventoryObject : ScriptableObject
     {
         Container = new Inventory();
     }
+    #endregion
+    public bool Contains(Item item, int amount)
+    {
+        for (int i = 0; i < Container.Items.Count; i++)
+        {
+            if (Container.Items[i].GetItem().Id == item.Id && Container.Items[i].GetAmount() >= amount)
+                return true;
+        }
+        return false;
+    }
+    public bool RemoveCraftItems(Item item, int amount)
+    {
+        for (int i = 0; i < Container.Items.Count; i++)
+        {
+            if (Container.Items[i].GetItem().Id == item.Id && Container.Items[i].GetAmount() >= amount)
+                Container.Items[i].RemoveAmount(amount);
+
+        }
+        return false;
+    }
+
 }
 
 [System.Serializable]
 public class Inventory
 {
     public List<InventorySlot> Items = new List<InventorySlot>();
+
 }
 
 [System.Serializable]
@@ -65,16 +104,24 @@ public class InventorySlot
     public int ID;
     public Item item;
     public int amount;
-    
+    public Item GetItem() { return item; }
+    public int GetAmount() { return amount; }
 
     public InventorySlot(int _id, Item _item, int _amount)
     {
         ID = _id;
         item = _item;
         amount = _amount;
+
+
     }
     public void AddAmount(int value)
     {
         amount += value;
+
+    }
+    public void RemoveAmount(int value)
+    {
+        amount -= value;
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GroundItem : MonoBehaviour
 {
@@ -12,14 +13,18 @@ public class GroundItem : MonoBehaviour
 
     private void Update()
     {
-        var floatText = transform.Find("FloatingText");
-        if (nearPlayer)
-        {
-            floatingText.SetActive(true);
-        }
-        else
-        {
-            floatingText.SetActive(false);
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name != "Title Screen")
+        { 
+            var floatText = transform.Find("FloatingText");
+            if (nearPlayer)
+            {
+                floatingText.SetActive(true);
+            }
+            else
+            {
+                floatingText.SetActive(false);
+            }
         }
     }
 
@@ -30,7 +35,8 @@ public class GroundItem : MonoBehaviour
 
         if (item && item.nearPlayer)
         {
-            inventory.AddItem(new Item (item.item), 1);
+            inventory.AddItem(new Item(item.item), 1);
+            item.nearPlayer = false;
             Destroy(item.gameObject);
             Destroy(floatingText);
         }

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed0462a2dc1d6f49a2b2b7705e00269, type: 3}
+  m_Name: RefinedInventory
+  m_EditorClassIdentifier: 
+  savePath: 
+  database: {fileID: 11400000, guid: b62b6960e6ea0b4439e1d67726a0fb68, type: 2}
+  Container:
+    Items:
+    - ID: 7
+      item:
+        Name: Nylon Twine
+        Id: 7
+      amount: 2

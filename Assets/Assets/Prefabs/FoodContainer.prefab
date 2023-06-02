@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8061101274389369351}
   - component: {fileID: 6350326549525976074}
-  - component: {fileID: 5171958662504138983}
+  - component: {fileID: 4092725047290493681}
   m_Layer: 0
   m_Name: FoodContainer
   m_TagString: Untagged
@@ -48,12 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: fb559a029e82a2649b4d5acef46564cf, type: 2}
-  itemName: Food Container
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   nearPlayer: 0
   floatingText: {fileID: 3890055085462464995}
---- !u!65 &5171958662504138983
-BoxCollider:
+--- !u!135 &4092725047290493681
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -63,8 +62,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 29, y: 2.2992256, z: 29}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1050978075286877463
 PrefabInstance:
   m_ObjectHideFlags: 0

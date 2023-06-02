@@ -48,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: e717a89abc6999644be0b028126b1c43, type: 2}
-  itemName: Water Bottle
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   nearPlayer: 0
   floatingText: {fileID: 8543081766184421269}
@@ -62,10 +61,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 150
+  m_Radius: 10
   m_Height: 5
   m_Direction: 1
-  m_Center: {x: 0, y: 14.712649, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1075877780823797018
 PrefabInstance:
   m_ObjectHideFlags: 0
