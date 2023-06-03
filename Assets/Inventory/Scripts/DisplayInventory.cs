@@ -36,6 +36,7 @@ public class DisplayInventory : MonoBehaviour
             if (itemsDisplayed.ContainsKey(slot))
             {
                 itemsDisplayed[slot].GetComponentInChildren<TextMeshProUGUI>().text = slot.amount.ToString("n0");
+                itemsDisplayed[slot].transform.Find("ItemName").GetComponent<TextMeshProUGUI>().text = inventory.database.GetItem[slot.item.Id].itemName;
             }
             else
             {
@@ -43,6 +44,7 @@ public class DisplayInventory : MonoBehaviour
                 obj.transform.GetChild(0).GetComponentInChildren<Image>().sprite = inventory.database.GetItem[slot.item.Id].uiDisplay;
                 obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
                 obj.GetComponentInChildren<TextMeshProUGUI>().text = slot.amount.ToString("n0");
+                obj.transform.Find("ItemName").GetComponent<TextMeshProUGUI>().text = inventory.database.GetItem[slot.item.Id].itemName;
                 itemsDisplayed.Add(slot, obj);
             }
         }

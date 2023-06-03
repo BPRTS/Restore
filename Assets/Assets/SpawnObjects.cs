@@ -10,7 +10,7 @@ public class SpawnObjects : MonoBehaviour
 
     public void objectSpawn()
     {
-        GameObject instanceObject = GameObject.Instantiate(rawMaterial, spawnPoints[spawnCount].transform.position, Quaternion.identity);
+        GameObject instanceObject = GameObject.Instantiate(rawMaterial, spawnPoints[spawnCount].transform.position, spawnPoints[spawnCount].transform.rotation);
         Debug.Log(spawnPoints[spawnCount].name);
 
     }

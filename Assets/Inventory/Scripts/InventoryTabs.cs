@@ -24,6 +24,7 @@ public class InventoryTabs : MonoBehaviour
     public void Start()
     {
         ToggleInventory();
+        
     }
     public void ToggleInventory()
     {
