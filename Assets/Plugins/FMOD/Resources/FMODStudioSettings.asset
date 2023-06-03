@@ -308,6 +308,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Background Audio
   - Bank A
   - Cat_Bank
   BanksToLoad: []
