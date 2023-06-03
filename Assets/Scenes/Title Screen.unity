@@ -108,21 +108,21 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    agentSlope: 60
+    agentClimb: 0.6
+    ledgeDropHeight: 10000000
+    maxJumpAcrossDistance: 15
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 57cca1199ccb7c74581c496eec17b28e, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 28a3bc259c31762489cd1ff432c1ad52, type: 2}
 --- !u!1 &40680360
 GameObject:
   m_ObjectHideFlags: 0

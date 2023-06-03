@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     public CharacterController controller;
     public Transform groundCheck;
     public Player playerInput;
+    public PopUpWindow popUpWindow;
 
 
     public float speed = 12f;
@@ -81,17 +82,27 @@ public class Player_Movement : MonoBehaviour
         if(!isBreathing)
         {
             oxygenBar.value -= 0.001f;
+            Debug.Log(oxygenBar.value);
         }
         if(isBreathing)
         {
             oxygenBar.value += 0.015f;
         }
 
-        //TODO
-       // if (oxygenBar.value < 0.9f && oxygenBar.value > 0.85f && isBreathing == false)
-         //{
-           //StartCoroutine(warningManager.Warning("Warning! You are leaving the Safe Zone."));
+        
+       //if (oxygenBar.value == 0.999f && isBreathing == false)
+        // {s
+        //    popUpWindow.AddToQueue("You are leaving the oxygen zone. Be careful.");
+       //}
+
+       //if(oxygenBar.value == 0.2500097f && isBreathing == false)
+        //{
+         //   popUpWindow.AddToQueue("You are about to run out of oxygen. Return to the area.");
        // }
+       //if(oxygenBar.value == 0.00f)
+        //{
+          //TODO: DIE  
+        //}
     }
 
 
