@@ -48,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 06c37a83658a41842a1e6af2eb4e5f02, type: 2}
-  itemName: Plastic Bag
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   nearPlayer: 0
   floatingText: {fileID: 5501051193017803729}
@@ -65,7 +64,7 @@ CapsuleCollider:
   m_Radius: 10
   m_Height: 10.929913
   m_Direction: 1
-  m_Center: {x: -1.337678, y: 4.9649563, z: 0.0033197403}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2811434822794820793
 PrefabInstance:
   m_ObjectHideFlags: 0

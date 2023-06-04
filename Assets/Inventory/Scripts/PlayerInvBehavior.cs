@@ -14,6 +14,12 @@ public class PlayerInvBehavior : MonoBehaviour
         {
             item.nearPlayer = true;
         }
+        var building = other.GetComponent<RepairBehavior>();
+        if (building)
+        {
+            building.nearPlayer = true;
+            Debug.Log("Touched a building");
+        }
     }
     public void OnTriggerExit(Collider other)
     {
@@ -21,6 +27,11 @@ public class PlayerInvBehavior : MonoBehaviour
         if (item)
         {
             item.nearPlayer = false;
+        }
+        var building = other.GetComponent<RepairBehavior>();
+        if (building)
+        {
+            building.nearPlayer = false;
         }
     }
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d11ba5f967d714fa51368661f2df4a, type: 3}
   m_Name: MetalCan
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Metal Can
   Id: 6
   uiDisplay: {fileID: 21300000, guid: 3b4a4ff95fa14b74b822a6be8a91b530, type: 3}
   type: 0

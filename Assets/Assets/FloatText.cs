@@ -33,11 +33,13 @@ public class FloatText : MonoBehaviour
 
 
         // ALWAYS look at camera // face player
-        transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position);
+        /*transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position);*/
 
         // ALWAYS FOLLOW OBJECT POSITION
         transform.position = collectObject.position + offset;
 
+        Vector3 newRotation = new Vector3(45, 0, 0);
+        transform.eulerAngles = newRotation;
 
     }
 
