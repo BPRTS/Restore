@@ -15,6 +15,8 @@ public class CraftBehavior : MonoBehaviour
                 Craft(craftingRecipes[0]);
             }
         }*/
+
+
     public void MakeOne()
     {
         Craft(craftingRecipes[0]);
@@ -25,8 +27,7 @@ public class CraftBehavior : MonoBehaviour
             recipe.Craft(inventory);
         else
             //show error
-            Debug.Log("Can't craft that item");
-        errorWindow.AddToQueue("You can't craft that item;");
+            errorWindow.AddToQueue("You can't craft that item");
 
     }
 
