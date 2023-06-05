@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{052d47c5-06ad-4fc1-be57-e7d54111a3cb}">
+		<property name="assetPath">
+			<value>Walking On Sand.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>19</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{89a5df27-d792-43d6-88ba-9dc6ccd88423}</destination>
+		</relationship>
+	</object>
+</objects>
