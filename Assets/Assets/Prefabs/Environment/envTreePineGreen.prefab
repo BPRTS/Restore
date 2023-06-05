@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8434295682543801736}
   - component: {fileID: 3606479640587551783}
   - component: {fileID: 1874335058155749021}
+  - component: {fileID: 6445166039219132774}
   m_Layer: 0
   m_Name: envTreePineGreen
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6445166039219132774
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049984650656845732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7535266674456330606, guid: a63e6f8d2bc007b45aee5f693b4ec44d, type: 3}

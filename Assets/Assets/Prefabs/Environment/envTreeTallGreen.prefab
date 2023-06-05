@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6681845218264333770}
   - component: {fileID: 188686540655064531}
   - component: {fileID: 6410213333863426373}
+  - component: {fileID: 6848826028161912357}
   m_Layer: 0
   m_Name: envTreeTallGreen
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6848826028161912357
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272313121552790457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7666800421028262724, guid: a63e6f8d2bc007b45aee5f693b4ec44d, type: 3}

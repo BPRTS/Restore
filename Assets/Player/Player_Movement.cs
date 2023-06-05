@@ -11,6 +11,8 @@ public class Player_Movement : MonoBehaviour
     public Player playerInput;
     public PopUpWindow popUpWindow;
 
+    public InventoryTabs inventoryTabs;
+
 
     public float speed = 12f;
     [SerializeField]
@@ -61,7 +63,13 @@ public class Player_Movement : MonoBehaviour
 
 
         Vector2 movementInput = playerInput.Movement.Move.ReadValue<Vector2>();
+        if(movementInput.x != 0f || movementInput.y != 0f)
+        {
+            Debug.Log(movementInput);
+            inventoryTabs.HideAllTabs();
+        }
         Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
+        
 
         controller.Move(move * speed * Time.deltaTime);
 

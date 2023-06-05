@@ -60,6 +60,7 @@ public class InventoryTabs : MonoBehaviour
         tabClose.SetActive(false);
         buttonSettings.SetActive(false);
         buttonHome.SetActive(false);
+        Inventory = false;
 
     }
     public void HideAllTabsInv()
