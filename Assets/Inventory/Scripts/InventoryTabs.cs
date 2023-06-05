@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InventoryTabs : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class InventoryTabs : MonoBehaviour
     public GameObject tabContent3;
 
     public GameObject tabClose;
+    public GameObject buttonSettings;
+    public GameObject buttonHome;
 
     private bool Inventory = true;
 
@@ -37,6 +40,8 @@ public class InventoryTabs : MonoBehaviour
             tabButton2.SetActive(false);
             tabButton3.SetActive(false);
             tabClose.SetActive(false);
+            buttonSettings.SetActive(false);
+            buttonHome.SetActive(false);
             Inventory = false;
         }
         else
@@ -53,6 +58,8 @@ public class InventoryTabs : MonoBehaviour
         tabButton2.SetActive(false);
         tabButton3.SetActive(false);
         tabClose.SetActive(false);
+        buttonSettings.SetActive(false);
+        buttonHome.SetActive(false);
 
     }
     public void HideAllTabsInv()
@@ -71,6 +78,8 @@ public class InventoryTabs : MonoBehaviour
         tabButton2.SetActive(true);
         tabButton3.SetActive(true);
         tabClose.SetActive(false);
+        buttonSettings.SetActive(true);
+        buttonHome.SetActive(true);
         Inventory = true;
     }
     public void ShowTab1()
@@ -106,5 +115,10 @@ public class InventoryTabs : MonoBehaviour
         HideAllTabs();
         tabContent3.SetActive(true);
         tabClose.SetActive(true);
+    }
+    public void GoHome()
+    {
+        SceneManager.LoadScene(0);
+        SceneManager.UnloadSceneAsync(1);
     }
 }
