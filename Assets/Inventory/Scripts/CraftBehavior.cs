@@ -6,7 +6,6 @@ public class CraftBehavior : MonoBehaviour
 {
     [SerializeField] private List<CraftClass> craftingRecipes = new List<CraftClass>();
     public InventoryObject inventory;
-    public InventoryObject craftInventory;
     public PopUpWindow errorWindow;
     /*    void Update()
         {

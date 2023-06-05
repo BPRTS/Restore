@@ -50,6 +50,5 @@ public class PlayerInvBehavior : MonoBehaviour
     private void OnApplicationQuit()
     {
         inventory.Container.Items.Clear();
-        craftInventory.Container.Items.Clear();
     }
 }
