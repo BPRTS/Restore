@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{974ad04f-a1b8-4c8b-b72d-6a0bf48121b9}">
+		<property name="assetPath">
+			<value>Wooden Plank 10-ZOOM0017_TrLR.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.47569160997732424</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{89a5df27-d792-43d6-88ba-9dc6ccd88423}</destination>
+		</relationship>
+	</object>
+</objects>
