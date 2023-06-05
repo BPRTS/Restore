@@ -15,10 +15,20 @@ MonoBehaviour:
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
   craftinventory: {fileID: 11400000, guid: 362c9c008320fef4387e01d31801dac0, type: 2}
   inputItems:
+  - ID: 3
+    item:
+      Name: Plastic Flatware
+      Id: 3
+    amount: 2
   - ID: 4
     item:
       Name: Water Bottle
       Id: 4
+    amount: 1
+  - ID: 0
+    item:
+      Name: Takeout Container
+      Id: 0
     amount: 2
   outputItem:
     ID: 7

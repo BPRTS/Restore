@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fbdc50bc8a9c14478fd23b8241211e4, type: 3}
   m_Name: RefinedWoodRecipe
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  craftinventory: {fileID: 0}
-  inputItems: []
-  outputItem:
-    ID: 0
+  inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
+  craftinventory: {fileID: 11400000, guid: 362c9c008320fef4387e01d31801dac0, type: 2}
+  inputItems:
+  - ID: 5
     item:
-      Name: 
+      Name: Wooden Plank
+      Id: 5
+    amount: 2
+  - ID: 0
+    item:
+      Name: Takeout Container
       Id: 0
-    amount: 0
+    amount: 2
+  outputItem:
+    ID: 9
+    item:
+      Name: Wood Panel
+      Id: 9
+    amount: 1

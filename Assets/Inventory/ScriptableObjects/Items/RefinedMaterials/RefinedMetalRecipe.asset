@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   craftinventory: {fileID: 0}
-  inputItems: []
-  outputItem:
-    ID: 0
+  inputItems:
+  - ID: 6
     item:
-      Name: 
-      Id: 0
-    amount: 0
+      Name: Metal Can
+      Id: 6
+    amount: 5
+  outputItem:
+    ID: 10
+    item:
+      Name: Refined Metal
+      Id: 10
+    amount: 1
