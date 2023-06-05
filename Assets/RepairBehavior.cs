@@ -6,6 +6,11 @@ public class RepairBehavior : MonoBehaviour
 {
     [SerializeField] private GameObject floatingText;
     public bool nearPlayer;
+    public OxygenBuilding oxygenBuilding;
+    public PopUpWindow popUpWindow;
+
+    public InventoryObject inventory;
+    public CraftClass craftClass;
 
     void Update()
     {
@@ -22,15 +27,19 @@ public class RepairBehavior : MonoBehaviour
 
     public void RepairBuilding()
     {
-/*        var building = GetComponent<RepairBehavior>();
-        
-        if (building && building.nearPlayer)
+        if(craftClass.CanCraft(inventory))
         {
-            building.nearPlayer = false;
-            Destroy(building.gameObject);
-            Destroy(floatingText);
-        }*/
-
-
+            StartCoroutine(oxygenBuilding.Build());
+        }
+        else
+        {
+            popUpWindow.AddToQueue("You don't have enough materials!");
+        }
+        
+        //if items are in
+        //
+        //else
+        //
+        
     }
 }

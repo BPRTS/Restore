@@ -33,27 +33,27 @@ public class OxygenBuilding : MonoBehaviour
     void Update()
     {
 
-        if (!rebuilt)
-        {
-            this.transform.GetChild(0).gameObject.SetActive(true);
-        }
+       /* //if (!rebuilt)
+        //{
+        this.transform.GetChild(0).gameObject.SetActive(true);
+    }
         else if(rebuilt)
         {
             this.transform.GetChild(1).gameObject.SetActive(true);
             this.transform.GetChild(0).gameObject.SetActive(false);
         }
-        if(Vector3.Distance(player.position,transform.position)<12f && !rebuilt)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                StartCoroutine(Build(timeToBuild));
-                
-            }
-        }
+if (Vector3.Distance(player.position, transform.position) < 12f && !rebuilt)
+{
+    if (Input.GetMouseButtonDown(0))
+    {
+        StartCoroutine(Build(timeToBuild));
+
+    }
+}*/
     }
 
 
-    IEnumerator Build(int time)
+    public IEnumerator Build()
     {
         if (isCoroutineExecuting)
             yield break;

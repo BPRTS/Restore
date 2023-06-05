@@ -82,7 +82,6 @@ public class Player_Movement : MonoBehaviour
         if(!isBreathing)
         {
             oxygenBar.value -= 0.001f;
-            Debug.Log(oxygenBar.value);
         }
         if(isBreathing)
         {
