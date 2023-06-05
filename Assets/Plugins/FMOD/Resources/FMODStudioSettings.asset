@@ -309,7 +309,6 @@ MonoBehaviour:
   - Master
   Banks:
   - Background Audio
-  - Bank A
   - Cat_Bank
   BanksToLoad: []
   LiveUpdatePort: 9264
