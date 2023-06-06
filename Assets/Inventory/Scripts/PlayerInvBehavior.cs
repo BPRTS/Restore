@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerInvBehavior : MonoBehaviour
 {
     public InventoryObject inventory;
-    public InventoryObject craftInventory;
     private ShaderVariantCollection floatText;
     public void OnTriggerEnter(Collider other)
     {
