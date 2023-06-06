@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenu;
+    public GameObject optionsMenu;
+    public GameObject volunteerMenu;
 
     void Start()
     {
@@ -20,6 +23,28 @@ public class MainMenu : MonoBehaviour
     public void OpenWCD()
     {
         Application.OpenURL("https://www.worldcleanupday.nl");
+    }
+    public void HideAllWindows()
+    {
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        volunteerMenu.SetActive(false);
+    }
+    public void OpenOptions()
+    {
+        HideAllWindows();
+        optionsMenu.SetActive(true);
+    }
+    public void OpenMainMenu()
+    {
+        HideAllWindows();
+        mainMenu.SetActive(true);
+    }
+
+    public void OpenVolunteer()
+    {
+        HideAllWindows();
+        volunteerMenu.SetActive(true);
     }
 
     public void QuitGame()
