@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
-        //SceneManager.UnloadSceneAsync(1);
+        SceneManager.UnloadSceneAsync(1);
     }
     public void PlayGame()
     {
