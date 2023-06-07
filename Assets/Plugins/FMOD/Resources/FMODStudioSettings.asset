@@ -310,6 +310,7 @@ MonoBehaviour:
   Banks:
   - Background Audio
   - Cat_Bank
+  - Item Pickup
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

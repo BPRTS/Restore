@@ -61,11 +61,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{33f24283-e922-46d2-8cfc-71ebb9e87e76}" />
 	<object class="MarkerTrack" id="{1ff05a37-7687-4dc0-9666-d4f9acf1ba6e}" />
-	<object class="Timeline" id="{e0f16c07-a10b-44a4-8c0d-2148af8ab215}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
-	</object>
+	<object class="Timeline" id="{e0f16c07-a10b-44a4-8c0d-2148af8ab215}" />
 	<object class="ActionSheet" id="{2d59969c-3ec1-429d-8e38-7e581e582c7e}">
 		<relationship name="modules">
 			<destination>{5f9c0e6a-09cb-4b54-9d6b-163e6a3403ba}</destination>
@@ -102,7 +98,7 @@
 	<object class="MixerBusPanner" id="{c6508ecb-c93f-4da9-b68b-30d41c1dcca0}" />
 	<object class="SingleSound" id="{79ef793e-e14b-41a9-a675-5a284e516f91}">
 		<property name="startOffset">
-			<value>94.5</value>
+			<value>80.5</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
