@@ -15,7 +15,11 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
+<<<<<<< Updated upstream
   lastModified: 638215627796990714
+=======
+  lastModified: 638213966803661973
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 17120
@@ -35,7 +39,11 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638215627797025806
+=======
+  lastModified: 638211413427341502
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -82,7 +90,11 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638215627797045841
+=======
+  lastModified: 638215715367209385
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 956
@@ -167,7 +179,11 @@ MonoBehaviour:
   - {fileID: -7128617541098206906}
   StringsBanks:
   - {fileID: -5667104308102958027}
+<<<<<<< Updated upstream
   cacheTime: 638215627797045841
+=======
+  cacheTime: 638215715367209385
+>>>>>>> Stashed changes
   cacheVersion: 131603
 --- !u!114 &3795868774100185168
 MonoBehaviour:
@@ -184,7 +200,11 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Background Audio.bank
   Name: Background Audio
   StudioPath: bank:/Background Audio
+<<<<<<< Updated upstream
   lastModified: 638215627796785514
+=======
+  lastModified: 638215715367199381
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 2388320

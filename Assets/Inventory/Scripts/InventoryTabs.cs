@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
+using System.Runtime.CompilerServices;
 
 public class InventoryTabs : MonoBehaviour
 {
@@ -147,7 +149,7 @@ public class InventoryTabs : MonoBehaviour
     }
     public void GoHome()
     {
-        SceneManager.LoadScene(0);
-        SceneManager.UnloadSceneAsync(1);
+        SceneManager.LoadSceneAsync(0);
     }
+
 }
