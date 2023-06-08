@@ -28,9 +28,9 @@ public class GroundItem : MonoBehaviour
         }
     }
 
+
     public void itemPickup()
     {
-
         var item = GetComponent<GroundItem>();
 
         if (item && item.nearPlayer)

@@ -11,15 +11,11 @@ public class InventoryTabs : MonoBehaviour
     public GameObject burgerbutton;
 
     public GameObject tabButton1;
-    public GameObject tabButton1a;
-    public GameObject tabButton1b;
     public GameObject tabButton2;
     public GameObject tabButton3;
     public GameObject tabButton4;
 
     public GameObject tabContent1;
-    public GameObject tabContent1a;
-    public GameObject tabContent1b;
     public GameObject tabContent2;
     public GameObject tabContent3;
 
@@ -28,6 +24,8 @@ public class InventoryTabs : MonoBehaviour
     public GameObject tabClose;
     public GameObject buttonSettings;
     public GameObject buttonHome;
+
+    public GameObject buttonQuests;
 
     private bool Inventory = true;
 
@@ -42,12 +40,16 @@ public class InventoryTabs : MonoBehaviour
         if(Inventory)
         {
             burgerbutton.SetActive(false);
+            buttonQuests.SetActive(false);
         }
         else
         {
             burgerbutton.SetActive(true);
+            buttonQuests.SetActive(true);
         }
+
     }
+    
     public void ToggleInventory()
     {
         if (Inventory == true)
@@ -75,15 +77,7 @@ public class InventoryTabs : MonoBehaviour
         Inventory = false;
 
     }
-    public void HideAllTabsInv()
-    {
-        tabContent1a.SetActive(false);
-        tabContent1b.SetActive(false);
 
-        tabButton1a.GetComponent<Button>().image.color = new Color32(200, 200, 200, 255);
-        tabButton1b.GetComponent<Button>().image.color = new Color32(200, 200, 200, 255);
-
-    }
     public void ShowTabMenu()
     {
         HideAllTabs();
@@ -105,22 +99,7 @@ public class InventoryTabs : MonoBehaviour
         tabClose.SetActive(true);
 
     }
-    public void ShowTab1a()
-    {
-        HideAllTabsInv();
-        bgImage.SetActive(true);
-        tabContent1a.SetActive(true);
-        tabButton1a.GetComponent<Button>().image.color = new Color32(255, 255, 255, 255);
-        tabClose.SetActive(true);
-    }
-    public void ShowTab1b()
-    {
-        HideAllTabsInv();
-        bgImage.SetActive(true);
-        tabContent1b.SetActive(true);
-        tabButton1b.GetComponent<Button>().image.color = new Color32(255, 255, 255, 255);
-        tabClose.SetActive(true);
-    }
+
     public void ShowTab2()
     {
         HideAllTabs();

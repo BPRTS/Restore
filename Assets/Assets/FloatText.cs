@@ -15,8 +15,8 @@ public class FloatText : MonoBehaviour
 
     void Start()
     {
-        //Assigning variables to handle transforms for:
-        //Camera, Object to collect, and Canvas where the text will be created.
+        // Assigning variables to handle transforms for:
+        // Camera, Object to collect that the Text is attached to, and Canvas where the text will be created.
 
         mainCam = Camera.main.transform;
         collectObject = transform.parent;
@@ -38,6 +38,8 @@ public class FloatText : MonoBehaviour
         // ALWAYS FOLLOW OBJECT POSITION
         transform.position = collectObject.position + offset;
 
+
+        // SET BUTTON FACING
         Vector3 newRotation = new Vector3(45, 0, 0);
         transform.eulerAngles = newRotation;
 
