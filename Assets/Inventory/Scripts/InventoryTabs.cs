@@ -32,7 +32,17 @@ public class InventoryTabs : MonoBehaviour
     public void Start()
     {
         ToggleInventory();
-        
+        if (PlayerPrefs.GetString("ButtonSide") == "Right")
+        {
+            Debug.Log("Right");
+            burgerbutton.transform.localPosition = new Vector3(390f, -901f, 0f);
+        }
+        else if (PlayerPrefs.GetString("ButtonSide") == "Left")
+        {
+            Debug.Log("Left");
+            burgerbutton.transform.localPosition = new Vector3(-337f, -901f, 0f);
+        }
+
     }
 
     public void Update()
