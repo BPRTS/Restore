@@ -27,7 +27,8 @@ public class InventoryTabs : MonoBehaviour
 
     public GameObject buttonQuests;
 
-    private bool Inventory = true;
+    public bool activeInventory = true;
+    public QuestUI questUI;
 
     public void Start()
     {
@@ -47,22 +48,21 @@ public class InventoryTabs : MonoBehaviour
 
     public void Update()
     {
-        if(Inventory)
+        if(activeInventory || questUI.questScreen.activeSelf)
         {
             burgerbutton.SetActive(false);
-            buttonQuests.SetActive(false);
         }
         else
         {
             burgerbutton.SetActive(true);
-            buttonQuests.SetActive(true);
         }
+
 
     }
     
     public void ToggleInventory()
     {
-        if (Inventory == true)
+        if (activeInventory)
         {
             HideAllTabs();
         }
@@ -84,7 +84,7 @@ public class InventoryTabs : MonoBehaviour
         tabClose.SetActive(false);
         buttonSettings.SetActive(false);
         buttonHome.SetActive(false);
-        Inventory = false;
+        activeInventory = false;
 
     }
 
@@ -99,7 +99,7 @@ public class InventoryTabs : MonoBehaviour
         tabClose.SetActive(true);
         buttonSettings.SetActive(true);
         buttonHome.SetActive(true);
-        Inventory = true;
+        activeInventory = true;
     }
     public void ShowTab1()
     {

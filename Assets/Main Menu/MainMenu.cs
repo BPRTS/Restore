@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void OpenWCD()
     {
-        Application.OpenURL("https://www.worldcleanupday.nl");
+        Application.OpenURL("https://www.worldcleanupday.nl/donate/choose");
     }
     public void HideAllWindows()
     {

@@ -26,7 +26,7 @@ public class CraftBehavior : MonoBehaviour
             recipe.Craft(inventory);
         else
             //show error
-            errorWindow.AddToQueue("You can't craft that item");
+            errorWindow.AddToQueue("You don't have all of the items you need to craft this item.");
 
     }
 

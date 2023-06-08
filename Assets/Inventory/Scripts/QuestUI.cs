@@ -5,23 +5,37 @@ using UnityEngine;
 public class QuestUI : MonoBehaviour
 {
     public GameObject buttonQuests;
-    public bool Quests;
+    public GameObject questScreen;
+    public InventoryTabs invTabs;
 
     void Start()
     {
         buttonQuests.SetActive(true);
-        Quests = false;
     }
 
     void Update()
     {
-        if(Quests)
-        {
-            buttonQuests.SetActive(false);
-        }
-        else
+        
+        if(!questScreen.activeSelf && !invTabs.activeInventory)
         {
             buttonQuests.SetActive(true);
         }
+        else
+        {
+            buttonQuests.SetActive(false);
+        }
+
     }
+
+    public void OpenQuests()
+    {
+        questScreen.SetActive(true);
+    }
+
+    public void CloseQuests()
+    {
+        questScreen.SetActive(false);
+
+    }
+
 }
