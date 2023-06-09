@@ -14,7 +14,7 @@ public class PopUpWindow : MonoBehaviour
 
     private Coroutine queueChecker;
 
-    private void Start()
+    private void Awake()
     {
         window = transform.GetChild(0).gameObject;
         popupAnimator = window.GetComponent<Animator>();
@@ -23,6 +23,10 @@ public class PopUpWindow : MonoBehaviour
     }
     public void AddToQueue(string text)
     {
+/*        if (popupQueue == null)
+        {
+            popupQueue = new Queue<string>();
+        }*/
         popupQueue.Enqueue(text);
         if(queueChecker == null)
         {

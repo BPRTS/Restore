@@ -71,7 +71,6 @@ public class Player_Movement : MonoBehaviour
         Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
         if (isWalking)
         {
-            Debug.Log(movementInput);
             inventoryTabs.HideAllTabs();
             targetRotation = Quaternion.LookRotation(move) ;
             targetRotation *= Quaternion.Euler(0f, 180f, 0f);
