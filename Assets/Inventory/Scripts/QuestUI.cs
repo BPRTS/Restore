@@ -7,16 +7,17 @@ public class QuestUI : MonoBehaviour
     public GameObject buttonQuests;
     public GameObject questScreen;
     public InventoryTabs invTabs;
+    public bool menuActive;
 
     void Start()
     {
         buttonQuests.SetActive(true);
     }
 
-    void Update()
+   public void Update()
     {
         
-        if(!questScreen.activeSelf && !invTabs.activeInventory)
+        if(!menuActive)
         {
             buttonQuests.SetActive(true);
         }
@@ -30,11 +31,13 @@ public class QuestUI : MonoBehaviour
     public void OpenQuests()
     {
         questScreen.SetActive(true);
+        menuActive = true;
     }
 
     public void CloseQuests()
     {
         questScreen.SetActive(false);
+        menuActive = false;
 
     }
 

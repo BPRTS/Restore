@@ -10,17 +10,14 @@ public class InventoryTabs : MonoBehaviour
 {
     public GameObject burgerbutton;
 
-    public GameObject tabButton1;
-    public GameObject tabButton2;
-    public GameObject tabButton3;
-    public GameObject tabButton4;
-
+    
+    public GameObject tabMenu;
     public GameObject tabContent1;
     public GameObject tabContent2;
     public GameObject tabContent3;
+    public GameObject tabContent4;
 
 
-    public GameObject bgImage;
     public GameObject tabClose;
     public GameObject buttonSettings;
     public GameObject buttonHome;
@@ -48,13 +45,13 @@ public class InventoryTabs : MonoBehaviour
 
     public void Update()
     {
-        if(activeInventory || questUI.questScreen.activeSelf)
+        if(!activeInventory)
         {
-            burgerbutton.SetActive(false);
+            burgerbutton.SetActive(true);
         }
         else
         {
-            burgerbutton.SetActive(true);
+            burgerbutton.SetActive(false);
         }
 
 
@@ -73,14 +70,11 @@ public class InventoryTabs : MonoBehaviour
     }
     public void HideAllTabs()
     {
-        bgImage.SetActive(false);
         tabContent1.SetActive(false);
         tabContent2.SetActive(false);
         tabContent3.SetActive(false);
-        tabButton1.SetActive(false);
-        tabButton2.SetActive(false);
-        tabButton3.SetActive(false);
-        tabButton4.SetActive(false);
+        tabContent4.SetActive(false);
+        tabMenu.SetActive(false);
         tabClose.SetActive(false);
         buttonSettings.SetActive(false);
         buttonHome.SetActive(false);
@@ -91,11 +85,7 @@ public class InventoryTabs : MonoBehaviour
     public void ShowTabMenu()
     {
         HideAllTabs();
-        bgImage.SetActive(true);
-        tabButton1.SetActive(true);
-        tabButton2.SetActive(true);
-        tabButton3.SetActive(true);
-        tabButton4.SetActive(true);
+        tabMenu.SetActive(true);
         tabClose.SetActive(true);
         buttonSettings.SetActive(true);
         buttonHome.SetActive(true);
@@ -104,7 +94,6 @@ public class InventoryTabs : MonoBehaviour
     public void ShowTab1()
     {
         HideAllTabs();
-        bgImage.SetActive(true);
         tabContent1.SetActive(true);
         tabClose.SetActive(true);
 
@@ -113,7 +102,6 @@ public class InventoryTabs : MonoBehaviour
     public void ShowTab2()
     {
         HideAllTabs();
-        bgImage.SetActive(true);
         tabContent2.SetActive(true);
         tabClose.SetActive(true);
 
@@ -121,13 +109,18 @@ public class InventoryTabs : MonoBehaviour
     public void ShowTab3()
     {
         HideAllTabs();
-        bgImage.SetActive(true);
         tabContent3.SetActive(true);
+        tabClose.SetActive(true);
+    }
+    public void ShowTab4()
+    {
+        HideAllTabs();
+        tabContent4.SetActive(true);
         tabClose.SetActive(true);
     }
     public void closeButton()
     { 
-        if(tabButton1.activeSelf)
+        if(tabMenu.activeSelf)
         {
             ToggleInventory();
         }

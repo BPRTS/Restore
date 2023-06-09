@@ -27,7 +27,21 @@ public class SocialMediaShare : MonoBehaviour
 
         new NativeShare().AddFile(path).SetSubject("World Cleanup Day is coming!").SetText("Start planning now to help a cleanup event near you!").Share();
         panelShare.SetActive(false);
-    }    
-        
+    }
+
+    public void OpenWCD()
+    {
+        Application.OpenURL("https://www.worldcleanupday.nl/donate/choose");
+    }
+    public void OpenMap()
+    {
+        Application.OpenURL("https://www.worldcleanupday.nl/participate");
+    }
+    public void CopyToClipboard()
+    {
+        GUIUtility.systemCopyBuffer = "https://www.worldcleanupday.nl/projects/participate";
+    }
+
+
 }
 

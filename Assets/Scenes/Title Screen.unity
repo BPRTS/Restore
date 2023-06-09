@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2940,8 +2940,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1968207145}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 2063528726}
+        m_TargetAssemblyTypeName: SocialMediaShare, Assembly-CSharp
         m_MethodName: OpenWCD
         m_Mode: 1
         m_Arguments:
@@ -7561,7 +7561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6e3e7333f4f196d48ae3fbd27d7f20a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98e63ee43d04d9a4b87c6348a3964a02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8065,7 +8065,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1587924685}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2063528726}
+        m_TargetAssemblyTypeName: SocialMediaShare, Assembly-CSharp
+        m_MethodName: OpenMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587924685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8834,7 +8846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6e3e7333f4f196d48ae3fbd27d7f20a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 271974488b468914d8662c60bb0001e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
