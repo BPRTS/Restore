@@ -27,12 +27,17 @@ public class Player_Movement : MonoBehaviour
     public bool isBreathing = false;
     public Slider oxygenBar;
 
+    private Animator playerAnimator;
+    public Transform playerModel;
+    private Quaternion targetRotation;
+
 //    public WarningManager warningManager;
 
     public void Awake()
     {
         playerInput = new Player();
         controller = GetComponent<CharacterController>();
+        playerAnimator = this.GetComponentInChildren<Animator>();
     }
     public void OnEnable()
     {
@@ -62,13 +67,22 @@ public class Player_Movement : MonoBehaviour
 
 
         Vector2 movementInput = playerInput.Movement.Move.ReadValue<Vector2>();
-        if(movementInput.x != 0f || movementInput.y != 0f)
+        bool isWalking = (movementInput.x != 0f || movementInput.y != 0f);
+        Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
+        if (isWalking)
         {
             Debug.Log(movementInput);
             inventoryTabs.HideAllTabs();
+            targetRotation = Quaternion.LookRotation(move) ;
+            targetRotation *= Quaternion.Euler(0f, 180f, 0f);
+            playerModel.rotation = Quaternion.Lerp(playerModel.rotation, targetRotation, Time.deltaTime * 2);
         }
-        Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
+        playerAnimator.SetBool("Walking", isWalking);
         
+       
+        
+        
+
 
         controller.Move(move * speed * Time.deltaTime);
 
