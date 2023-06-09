@@ -1684,8 +1684,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1010105480}
   m_HandleRect: {fileID: 1010105479}
   m_Direction: 2
-  m_Value: 0.99999976
-  m_Size: 0.61515355
+  m_Value: 1.0000005
+  m_Size: 0.61515206
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10817,12 +10817,7 @@ MonoBehaviour:
   bottleQuest: {fileID: 707985314}
   popUpWindow: {fileID: 341249710}
   inventory: {fileID: 11400000, guid: 9c4126b05ae9b1942a75705f756e24b1, type: 2}
-  outputItem:
-    ID: 7
-    item:
-      Name: Nylon Twine
-      Id: 7
-    amount: 1
+  item: {fileID: 0}
 --- !u!114 &267723482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19321,6 +19316,7 @@ MonoBehaviour:
     m_Bits: 64
   isBreathing: 0
   oxygenBar: {fileID: 2093294834}
+  playerModel: {fileID: 1655449898}
 --- !u!114 &721652005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19716,7 +19712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.654205, y: -292.39774}
+  m_AnchoredPosition: {x: 15.654205, y: -292.39798}
   m_SizeDelta: {x: 752.62, y: 1519.5554}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737937917
