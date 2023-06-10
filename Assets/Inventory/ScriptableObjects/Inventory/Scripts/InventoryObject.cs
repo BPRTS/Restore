@@ -78,6 +78,15 @@ public class InventoryObject : ScriptableObject
         }
         return false;
     }
+    public int ContainsAmount(Item item)
+    {
+        for (int i = 0; i < Container.Items.Count; i++)
+        {
+            if (Container.Items[i].GetItem().Id == item.Id)
+                return Container.Items[i].GetAmount();
+        }
+        return 0;
+    }
     public bool RemoveCraftItems(Item item, int amount)
     {
         for (int i = 0; i < Container.Items.Count; i++)
