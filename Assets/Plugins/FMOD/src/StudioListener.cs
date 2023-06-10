@@ -6,6 +6,10 @@ namespace FMODUnity
     [AddComponentMenu("FMOD Studio/FMOD Studio Listener")]
     public class StudioListener : MonoBehaviour
     {
+        private void Awake()
+        {
+            DontDestroyOnLoad(transform.gameObject);
+        }
         [SerializeField]
         private GameObject attenuationObject = null;
 

@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
-  lastModified: 638211459634131426
+  lastModified: 638220111230218494
   FileSizes:
   - Name: Desktop
     Value: 17120
@@ -62,38 +62,11 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638204803542304284
+  lastModified: 638220111230712740
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
---- !u!114 &-6674082328972038215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Restore
-  m_EditorClassIdentifier: 
-  Path: event:/Restore
-  Guid:
-    Data1: 53148527
-    Data2: 1108073616
-    Data3: 1265771146
-    Data4: -472449651
-  Banks:
-  - {fileID: 3795868774100185168}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 158395
 --- !u!114 &-5786476919409961964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,10 +109,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638217517204756843
+  lastModified: 638220111230733514
   FileSizes:
   - Name: Desktop
-    Value: 1174
+    Value: 1126
   Exists: 1
 --- !u!114 &-3589724250478494845
 MonoBehaviour:
@@ -164,33 +137,6 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3294857729871980336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Restore_Intro
-  m_EditorClassIdentifier: 
-  Path: event:/Restore_Intro
-  Guid:
-    Data1: 1826110943
-    Data2: 1250912004
-    Data3: 1953888446
-    Data4: -1314184858
-  Banks:
-  - {fileID: 3795868774100185168}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -242,46 +188,18 @@ MonoBehaviour:
   - {fileID: 2343785074571576122}
   EditorEvents:
   - {fileID: -723597751631200638}
-  - {fileID: -3294857729871980336}
-  - {fileID: -6674082328972038215}
   - {fileID: -5786476919409961964}
   - {fileID: -7203504010706573859}
   - {fileID: -3589724250478494845}
-  - {fileID: 860474634729239388}
+  - {fileID: 3128799009238102676}
+  - {fileID: 8458795280644560207}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7128617541098206906}
   StringsBanks:
   - {fileID: -5667104308102958027}
-  cacheTime: 638217517204756843
+  cacheTime: 638220111230733514
   cacheVersion: 131603
---- !u!114 &860474634729239388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Play Game
-  m_EditorClassIdentifier: 
-  Path: event:/Play Game
-  Guid:
-    Data1: -2072926371
-    Data2: 1340256153
-    Data3: 959568791
-    Data4: 1703828689
-  Banks:
-  - {fileID: 3795868774100185168}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1837
 --- !u!114 &2343785074571576122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,11 +215,38 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Item Pickup.bank
   Name: Item Pickup
   StudioPath: bank:/Item Pickup
-  lastModified: 638217517204706678
+  lastModified: 638220111230662611
   FileSizes:
   - Name: Desktop
     Value: 186880
   Exists: 1
+--- !u!114 &3128799009238102676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/IntroMusic
+  m_EditorClassIdentifier: 
+  Path: event:/IntroMusic
+  Guid:
+    Data1: -1292757429
+    Data2: 1207972775
+    Data3: 156796349
+    Data4: -1515956058
+  Banks:
+  - {fileID: 3795868774100185168}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 39265
 --- !u!114 &3795868774100185168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,8 +262,35 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Background Audio.bank
   Name: Background Audio
   StudioPath: bank:/Background Audio
-  lastModified: 638217517204686623
+  lastModified: 638220111230024532
   FileSizes:
   - Name: Desktop
-    Value: 2429888
+    Value: 2389152
   Exists: 1
+--- !u!114 &8458795280644560207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BackgroundMusic
+  m_EditorClassIdentifier: 
+  Path: event:/BackgroundMusic
+  Guid:
+    Data1: -1158077459
+    Data2: 1231322024
+    Data3: 206504105
+    Data4: 1960108673
+  Banks:
+  - {fileID: 3795868774100185168}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 142000
