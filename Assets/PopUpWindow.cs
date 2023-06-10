@@ -23,10 +23,6 @@ public class PopUpWindow : MonoBehaviour
     }
     public void AddToQueue(string text)
     {
-/*        if (popupQueue == null)
-        {
-            popupQueue = new Queue<string>();
-        }*/
         popupQueue.Enqueue(text);
         if(queueChecker == null)
         {
@@ -34,8 +30,15 @@ public class PopUpWindow : MonoBehaviour
         }    
     }
 
+    public void ClosePopup()
+    {
+        Debug.Log("Close");
+        popupAnimator.SetTrigger("End");
+    }
+
     private void ShowPopup(string text)
     {
+        popupAnimator.ResetTrigger("End");
         window.SetActive(true);
         popupText.text = text;
         popupAnimator.Play("PopUpAnimation");
@@ -48,12 +51,13 @@ public class PopUpWindow : MonoBehaviour
             ShowPopup(popupQueue.Dequeue());
             do
             {
+                Debug.Log(window.active);
                 yield return null;
 
             } while (!popupAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"));
 
         } while (popupQueue.Count > 0);
         window.SetActive(false);
-        queueChecker= null; 
+        queueChecker = null; 
     }
 }
