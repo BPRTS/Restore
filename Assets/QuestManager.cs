@@ -22,13 +22,16 @@ public class QuestManager : MonoBehaviour
     public ItemObject q03Reward;
     public int q03RewardAmt;
 
+
+    private string questName = "Empty! Change this in script.";
     //TODO CALL THIS 
     public void BottleQuest()
     {
         bottleQuest.isOn = true;
-        
+        questName = "Collect Bottles";
+
         inventory.AddItem(new Item(q01Reward), 1);
-        popUpWindow.AddToQueue($"Quest Complete! You have gotten {q01RewardAmt} {q01Reward.itemName}");
+        popUpWindow.AddToQueue($"{questName} Quest Complete! You have gotten {q01RewardAmt} {q01Reward.itemName}");
 
 
     }
