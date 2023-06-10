@@ -8,23 +8,20 @@ using UnityEngine.UI;
 public class VolumeMusicFMOD : MonoBehaviour
 {
     public Slider volumeSlider;
-    public string mixerGroupPath;  // Path to the Mixer Group in FMOD Studio
-    public string parameterName;   // Name of the parameter controlling the volume
+    public string busPath;  // Path to the Bus in FMOD Studio
+    public string parameterName;           // Name of the parameter controlling the volume
 
-    private EventDescription eventDescription;
-    private PARAMETER_ID parameterID;
+    private Bus bus;
+    private float parameterID;
 
-    // Update is called once per frame
-    void Start()
+    private void Start()
     {
-        eventDescription = RuntimeManager.GetEventDescription(mixerGroupPath);
-        eventDescription.getParameterDescriptionByName(parameterName, out PARAMETER_DESCRIPTION parameterDescription);
-        parameterID = parameterDescription.id;
+        bus = RuntimeManager.GetBus(busPath);
     }
 
     public void UpdateVolume()
     {
         float sliderValue = volumeSlider.value;
-        RuntimeManager.StudioSystem.setParameterByID(parameterID, sliderValue);
+        bus.setVolume(sliderValue);
     }
 }

@@ -935,8 +935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 205346276}
-  mixerGroupPath: bus:/Music
-  parameterName: parameter:/VolumeMusic
+  busPath: bus:/Music
+  parameterName: VolumeMusic
 --- !u!1 &211298980
 GameObject:
   m_ObjectHideFlags: 0
