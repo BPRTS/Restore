@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{fa6c0660-9147-453b-8a6b-9f68bc18ea9b}">
+		<property name="assetPath">
+			<value>Wooden Plank/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{89a5df27-d792-43d6-88ba-9dc6ccd88423}</destination>
+		</relationship>
+	</object>
+</objects>
