@@ -957,6 +957,20 @@ MonoBehaviour:
       m_Height: 73
     m_Scale: 1
     m_AtlasIndex: 0
+  - m_Index: 74
+    m_Metrics:
+      m_Width: 37.171875
+      m_Height: 72.09375
+      m_HorizontalBearingX: 1.796875
+      m_HorizontalBearingY: 63.09375
+      m_HorizontalAdvance: 40.765625
+    m_GlyphRect:
+      m_X: 324
+      m_Y: 417
+      m_Width: 38
+      m_Height: 73
+    m_Scale: 1
+    m_AtlasIndex: 0
   - m_Index: 79
     m_Metrics:
       m_Width: 27
@@ -1053,20 +1067,6 @@ MonoBehaviour:
       m_Y: 957
       m_Width: 39
       m_Height: 42
-    m_Scale: 1
-    m_AtlasIndex: 0
-  - m_Index: 74
-    m_Metrics:
-      m_Width: 37.171875
-      m_Height: 72.09375
-      m_HorizontalBearingX: 1.796875
-      m_HorizontalBearingY: 63.09375
-      m_HorizontalAdvance: 40.765625
-    m_GlyphRect:
-      m_X: 324
-      m_Y: 417
-      m_Width: 38
-      m_Height: 73
     m_Scale: 1
     m_AtlasIndex: 0
   m_CharacterTable:
@@ -1235,6 +1235,10 @@ MonoBehaviour:
     m_GlyphIndex: 25
     m_Scale: 1
   - m_ElementType: 1
+    m_Unicode: 92
+    m_GlyphIndex: 74
+    m_Scale: 1
+  - m_ElementType: 1
     m_Unicode: 95
     m_GlyphIndex: 82
     m_Scale: 1
@@ -1345,10 +1349,6 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 8230
     m_GlyphIndex: 68
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 92
-    m_GlyphIndex: 74
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: -2866339837793498512}
@@ -1949,8 +1949,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GiveMeTheScoop-Regular Atlas Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ValidKeywords:
-  - UNDERLAY_ON
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
