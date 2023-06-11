@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
-  lastModified: 638211459634131426
+  lastModified: 638220729124175279
   FileSizes:
   - Name: Desktop
     Value: 17120
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638220312026015074
+  lastModified: 638220729126162535
   FileSizes:
   - Name: Desktop
-    Value: 1738
+    Value: 1658
   Exists: 1
 --- !u!114 &-5786476919409961964
 MonoBehaviour:
@@ -109,10 +109,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638220312026026012
+  lastModified: 638220729126173297
   FileSizes:
   - Name: Desktop
-    Value: 1214
+    Value: 1272
   Exists: 1
 --- !u!114 &-3589724250478494845
 MonoBehaviour:
@@ -157,7 +157,7 @@ MonoBehaviour:
   StudioPath: parameter:/VolumeMusic
   Min: 0
   Max: 10
-  Default: 10
+  Default: 0
   ID:
     data1: 3514409437
     data2: 3937770765
@@ -165,6 +165,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1178709583578010618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FoodContainer
+  m_EditorClassIdentifier: 
+  Path: event:/FoodContainer
+  Guid:
+    Data1: 962876774
+    Data2: 1102249263
+    Data3: -1972848243
+    Data4: -242351838
+  Banks:
+  - {fileID: 2343785074571576122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-723597751631200638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,13 +244,15 @@ MonoBehaviour:
   - {fileID: -3589724250478494845}
   - {fileID: 3128799009238102676}
   - {fileID: 8458795280644560207}
+  - {fileID: 5472417379888415754}
+  - {fileID: -1178709583578010618}
   EditorParameters:
   - {fileID: -3123281020941498558}
   MasterBanks:
   - {fileID: -7128617541098206906}
   StringsBanks:
   - {fileID: -5667104308102958027}
-  cacheTime: 638220312026026012
+  cacheTime: 638220729126173297
   cacheVersion: 131603
 --- !u!114 &2343785074571576122
 MonoBehaviour:
@@ -240,10 +269,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Item Pickup.bank
   Name: Item Pickup
   StudioPath: bank:/Item Pickup
-  lastModified: 638217517204706678
+  lastModified: 638220729126132277
   FileSizes:
   - Name: Desktop
-    Value: 186880
+    Value: 329824
   Exists: 1
 --- !u!114 &3128799009238102676
 MonoBehaviour:
@@ -287,11 +316,38 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Background Audio.bank
   Name: Background Audio
   StudioPath: bank:/Background Audio
-  lastModified: 638220312026004542
+  lastModified: 638220729123992469
   FileSizes:
   - Name: Desktop
     Value: 2389152
   Exists: 1
+--- !u!114 &5472417379888415754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Plastic Utensils
+  m_EditorClassIdentifier: 
+  Path: event:/Plastic Utensils
+  Guid:
+    Data1: -1372762563
+    Data2: 1233130514
+    Data3: 1947229091
+    Data4: -677324658
+  Banks:
+  - {fileID: 2343785074571576122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8458795280644560207
 MonoBehaviour:
   m_ObjectHideFlags: 0

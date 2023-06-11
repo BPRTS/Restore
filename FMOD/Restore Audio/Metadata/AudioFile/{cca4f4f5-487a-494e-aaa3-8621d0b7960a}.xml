@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{cca4f4f5-487a-494e-aaa3-8621d0b7960a}">
 		<property name="assetPath">
-			<value>Crafting_Sound_FX_84-Crafting_Sound.wav</value>
+			<value>Crafting/Crafting_Sound_FX_84-Crafting_Sound.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
