@@ -14,7 +14,7 @@ public class GroundItem : MonoBehaviour
     private void Update()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name != "Title Screen")
+        if (currentScene.name == "Game")
         { 
             var floatText = transform.Find("FloatingText");
             if (nearPlayer)

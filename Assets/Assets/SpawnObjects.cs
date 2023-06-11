@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnObjects : MonoBehaviour
 {
@@ -22,11 +23,15 @@ public class SpawnObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (spawnCount < spawnPoints.Length)
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Game")
         {
-            objectSpawn();
-            spawnCount++;
+
+            if (spawnCount < spawnPoints.Length)
+            {
+                objectSpawn();
+                spawnCount++;
+            }
         }
     }
 }
