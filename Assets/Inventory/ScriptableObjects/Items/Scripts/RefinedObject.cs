@@ -7,6 +7,6 @@ public class RefinedObject : ItemObject
 {
     public void Awake()
     {
-        type = ItemType.Refined;
+        type = ItemType.CraftedItem;
     }
 }

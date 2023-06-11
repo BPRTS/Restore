@@ -16,5 +16,7 @@ MonoBehaviour:
   Id: 3
   uiDisplay: {fileID: 21300000, guid: e9c1e0ae31fdda84c83b82be5cd63dc0, type: 3}
   type: 0
-  description: small weapons for crabs. Demilitarize them, for the love of all things
-    holy.
+  description: Small plastic weapons in many shapes and forms. Legend speaks of one
+    that combines the best features of spearing and scooping. The crustaceans must
+    never find out about this.
+  searchSuggestion: 'Search Suggestion: "Donate Plastic Utensils"'

@@ -16,4 +16,6 @@ MonoBehaviour:
   Id: 2
   uiDisplay: {fileID: 21300000, guid: 3c3b09b7996dfeb4e8f10bff2de38336, type: 3}
   type: 0
-  description: Plastic rings that used to hold things together. Now they kill birds.
+  description: These rings seem to be somewhat uncommon compared to other types of
+    waste on the island. Good thing too, as birds seem to get caught in them easily.
+  searchSuggestion: 'Search Suggestion: "cutting plastic rings"'

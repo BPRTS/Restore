@@ -16,4 +16,5 @@ MonoBehaviour:
   Id: 8
   uiDisplay: {fileID: 21300000, guid: a4ef355aabcd0b94a9f9c8a51cb98394, type: 3}
   type: 1
-  description: 
+  description: A basic panel made from plastics. While we will need sturdier panels
+    for building the homestead, this will get us started with the basics.

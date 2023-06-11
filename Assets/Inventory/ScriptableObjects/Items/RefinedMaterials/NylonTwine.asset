@@ -16,4 +16,5 @@ MonoBehaviour:
   Id: 7
   uiDisplay: {fileID: 21300000, guid: fe526374da3aa224d8f786c45f71e795, type: 3}
   type: 1
-  description: 
+  description: A length of twine can be crafted by combining a few different plastics.
+    We'll need this to hold things together.

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d11ba5f967d714fa51368661f2df4a, type: 3}
   m_Name: WoodenPlanks
   m_EditorClassIdentifier: 
-  itemName: Planks
+  itemName: Wooden Plank
   Id: 5
   uiDisplay: {fileID: 21300000, guid: 74e86c1f72193824ca1a2a5de5686abc, type: 3}
   type: 0
-  description: 
+  description: The island has a few pallets, and wood can be salvaged from them.
+    Wood tends to rot when in this environment, but it can be treated and reused
+    in other projects. Just have to watch out for nails.
+  searchSuggestion: 'Search Suggestion: "Wooden Pallet Crafts"'

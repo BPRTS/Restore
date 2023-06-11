@@ -7,6 +7,6 @@ public class BasicObject : ItemObject
 {
     public void Awake()
     {
-        type = ItemType.Basic;
+        type = ItemType.WorldItem;
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public enum ItemType
 {
-    Basic,
-    Refined,
+    WorldItem,
+    CraftedItem,
     Default
 }
 
@@ -17,6 +17,8 @@ public abstract class ItemObject : ScriptableObject
     public ItemType type;
     [TextArea(15, 20)]
     public string description;
+    [TextArea(5, 5)] 
+    public string searchSuggestion;
 }
 
 [System.Serializable]

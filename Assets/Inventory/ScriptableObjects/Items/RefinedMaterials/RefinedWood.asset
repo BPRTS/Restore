@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RefinedWood
   m_EditorClassIdentifier: 
   itemName: Refined Wood
-  Id: 0
+  Id: 10
   uiDisplay: {fileID: 21300000, guid: f2e500fb85327d7439c806c503659d4f, type: 3}
   type: 1
-  description: 
+  description: A sturdy panel of reclaimed wood. This should hold up nicely for building.

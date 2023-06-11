@@ -16,4 +16,7 @@ MonoBehaviour:
   Id: 1
   uiDisplay: {fileID: 21300000, guid: ecff06b7ddb3309479e243f695ec0916, type: 3}
   type: 0
-  description: 
+  description: These bags have proven dangerous when discarded! Small creatures can
+    suffocate if they become trapped inside. Fortunately, it is also a very functional
+    item and has high value for reuse.
+  searchSuggestion: 'Search Suggestion: "20 Creative Ways to Reuse Plastic Bags"'

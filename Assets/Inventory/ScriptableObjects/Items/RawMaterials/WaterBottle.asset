@@ -16,4 +16,7 @@ MonoBehaviour:
   Id: 4
   uiDisplay: {fileID: 21300000, guid: b3d1a013fdf22cb46b8b258f3eb64378, type: 3}
   type: 0
-  description: Waterbottle!
+  description: The island is littered with these items! The prior civilization clearly
+    found great use for them. Initial analysis shows great promise for containing
+    liquids and repurposing for other functions as well.
+  searchSuggestion: 'Search Suggestion: "60 Ways to Reuse Plastic Bottles"'

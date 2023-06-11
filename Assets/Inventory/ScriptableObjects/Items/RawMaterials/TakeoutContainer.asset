@@ -16,4 +16,6 @@ MonoBehaviour:
   Id: 0
   uiDisplay: {fileID: 21300000, guid: b6fb112f83232a843a7f6eefe2de9e9d, type: 3}
   type: 0
-  description: A clamshell made of plastic.
+  description: 'A highly reusable item! These food transportation devices come in
+    many forms, from a flimsy clamshell to sturdier containers with lids. '
+  searchSuggestion: 'Search Suggestion: "11 Clever Ways To Repurpose Takeout Containers"'

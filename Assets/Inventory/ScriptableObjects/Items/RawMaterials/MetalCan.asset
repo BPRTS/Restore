@@ -16,4 +16,7 @@ MonoBehaviour:
   Id: 6
   uiDisplay: {fileID: 21300000, guid: 3b4a4ff95fa14b74b822a6be8a91b530, type: 3}
   type: 0
-  description: 
+  description: A container, but made of metal. Strange how a more durable construction
+    is more difficult to reuse for its original purpose. But we'll need this to get
+    the homestead up and running.
+  searchSuggestion: 'Search Suggestion: "Cash from Cans"'
