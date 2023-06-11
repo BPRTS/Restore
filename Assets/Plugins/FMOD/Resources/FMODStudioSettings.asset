@@ -310,7 +310,9 @@ MonoBehaviour:
   Banks:
   - Background Audio
   - Cat_Bank
+  - Inventory
   - Item Pickup
+  - MenuUI
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
