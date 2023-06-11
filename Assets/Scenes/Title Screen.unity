@@ -6253,7 +6253,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148684579}
-  - component: {fileID: 1148684578}
   - component: {fileID: 1148684577}
   - component: {fileID: 1148684576}
   - component: {fileID: 1148684575}
@@ -6421,18 +6420,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &1148684578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148684572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaad1c5cbd76e034fb06c14e345b1ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1148684579
 Transform:
   m_ObjectHideFlags: 0
