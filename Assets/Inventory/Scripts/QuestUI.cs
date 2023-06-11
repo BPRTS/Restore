@@ -39,11 +39,11 @@ public class QuestUI : MonoBehaviour
 
         if (Delay <= 0 && newQuest)
         {
-            transform.Find("QuestIndicator").GetComponent<Animation>().Play("QuestIconNew");
+            transform.Find("QuestIndicator").GetComponent<Animation>().Play("NewQuest");
             Delay = 3f;
         }
 
-        //If New Quest
+/*        //If New Quest
         if (newQuest)
         { 
             transform.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
@@ -59,7 +59,7 @@ public class QuestUI : MonoBehaviour
         if (questCount == 0)
         {
             transform.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
-        }
+        }*/
     }
 
     public void OpenQuests()
