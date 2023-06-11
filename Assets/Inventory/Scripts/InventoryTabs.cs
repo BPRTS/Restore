@@ -140,7 +140,7 @@ public class InventoryTabs : MonoBehaviour
     }
     public void GoHome()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
     }
 
 }

@@ -6,12 +6,12 @@ public class NextScene : MonoBehaviour
 {
     private void Start()
     {
-        SceneManager.UnloadSceneAsync(0);
         SceneManager.UnloadSceneAsync(1);
+        SceneManager.UnloadSceneAsync(2);
     }
     public void OpenMainMenu()
     {
-        SceneManager.LoadSceneAsync(0);
-        SceneManager.UnloadSceneAsync(2);
+        SceneManager.LoadSceneAsync(1);
+        SceneManager.UnloadSceneAsync(0);
     }
 }

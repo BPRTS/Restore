@@ -12,12 +12,12 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
-        SceneManager.UnloadSceneAsync(1);
+        SceneManager.UnloadSceneAsync(2);
     }
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
-        SceneManager.UnloadSceneAsync(0);
+        SceneManager.LoadSceneAsync(2);
+        SceneManager.UnloadSceneAsync(1);
     }
 
     public void OpenWCD()
