@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
-  lastModified: 638221117578504739
+  lastModified: 638221149657463242
   FileSizes:
   - Name: Desktop
     Value: 17120
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638221117583438477
+  lastModified: 638221149662377525
   FileSizes:
   - Name: Desktop
     Value: 1658
@@ -217,7 +217,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Inventory.bank
   Name: Inventory
   StudioPath: bank:/Inventory
-  lastModified: 638221117580935891
+  lastModified: 638221149659171364
   FileSizes:
   - Name: Desktop
     Value: 267776
@@ -237,10 +237,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638221117583459394
+  lastModified: 638221149662398435
   FileSizes:
   - Name: Desktop
-    Value: 1976
+    Value: 2022
   Exists: 1
 --- !u!114 &-3589724250478494845
 MonoBehaviour:
@@ -308,7 +308,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638221117585189383
+  lastModified: 638221149663815636
   FileSizes:
   - Name: Desktop
     Value: 796192
@@ -436,13 +436,14 @@ MonoBehaviour:
   - {fileID: -9131778722098231817}
   - {fileID: 715890192014891742}
   - {fileID: 1346120538953413126}
+  - {fileID: 2272432106052726153}
   EditorParameters:
   - {fileID: -3123281020941498558}
   MasterBanks:
   - {fileID: -7128617541098206906}
   StringsBanks:
   - {fileID: -5667104308102958027}
-  cacheTime: 638221117585189383
+  cacheTime: 638221149663815636
   cacheVersion: 131603
 --- !u!114 &516307037222250647
 MonoBehaviour:
@@ -459,7 +460,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/MenuUI.bank
   Name: MenuUI
   StudioPath: bank:/MenuUI
-  lastModified: 638221117584333459
+  lastModified: 638221149663138448
   FileSizes:
   - Name: Desktop
     Value: 36480
@@ -518,6 +519,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2272432106052726153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Plastic Bag
+  m_EditorClassIdentifier: 
+  Path: event:/Plastic Bag
+  Guid:
+    Data1: -175463748
+    Data2: 1074762134
+    Data3: -443260226
+    Data4: 1080089393
+  Banks:
+  - {fileID: 2343785074571576122}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2343785074571576122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,10 +561,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Item Pickup.bank
   Name: Item Pickup
   StudioPath: bank:/Item Pickup
-  lastModified: 638221117583408305
+  lastModified: 638221149662327257
   FileSizes:
   - Name: Desktop
-    Value: 402688
+    Value: 489600
   Exists: 1
 --- !u!114 &3128799009238102676
 MonoBehaviour:
@@ -607,7 +635,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Background Audio.bank
   Name: Background Audio
   StudioPath: bank:/Background Audio
-  lastModified: 638221117577839098
+  lastModified: 638221149656471082
   FileSizes:
   - Name: Desktop
     Value: 2389152

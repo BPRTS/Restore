@@ -148,10 +148,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
@@ -159,7 +163,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2731629331866805601}
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2404663870335921251}
+    - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
@@ -167,11 +179,23 @@ PrefabInstance:
       value: itemPickup
       objectReference: {fileID: 0}
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Item, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796091451355852016, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7618228014497142223, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
@@ -268,6 +292,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+--- !u!1 &2058458325824173992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929559279844703990, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
+  m_PrefabInstance: {fileID: 3762474176790022494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2404663870335921251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058458325824173992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -175463748
+      Data2: 1074762134
+      Data3: -443260226
+      Data4: 1080089393
+    Path: event:/Plastic Bag
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5501051193017803729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8674309732866386575, guid: 200d1ee5ab746d24d9dc5f2bff02cec5, type: 3}
