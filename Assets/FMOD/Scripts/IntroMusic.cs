@@ -1,5 +1,6 @@
 using UnityEngine;
 using FMOD.Studio;
+using System;
 
 public class IntroMusic : MonoBehaviour
 {
@@ -40,6 +41,18 @@ public class IntroMusic : MonoBehaviour
         eventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
+    public void StartEvent()
+    {
+        eventInstance.start();
+    }
+
+    public bool IsStopped()
+    {
+        FMOD.Studio.PLAYBACK_STATE playbackstate;
+        eventInstance.getPlaybackState(out playbackstate);
+
+        return playbackstate == FMOD.Studio.PLAYBACK_STATE.STOPPED;
+    }
     private void OnDestroy()
     {
         // Release the FMOD event instance when the GameObject is destroyed
