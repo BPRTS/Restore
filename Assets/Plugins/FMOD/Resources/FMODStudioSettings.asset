@@ -311,6 +311,7 @@ MonoBehaviour:
   - Background Audio
   - Cat_Bank
   - Item Pickup
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
