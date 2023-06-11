@@ -27,6 +27,11 @@ public class InventoryTabs : MonoBehaviour
     public bool activeInventory = true;
     public QuestUI questUI;
 
+    //FMOD TriggerPaths
+    
+    public string openInventoryEventPath;
+    public string closeInventoryEventPath;
+
     public void Start()
     {
         ToggleInventory();
@@ -62,10 +67,14 @@ public class InventoryTabs : MonoBehaviour
         if (activeInventory)
         {
             HideAllTabs();
+            //FMOD Trigger Closing Inventory
+            FMODUnity.RuntimeManager.PlayOneShot(closeInventoryEventPath, transform.position);
         }
         else
         {
             ShowTabMenu();
+            //FMOD Trigger Opening Inventory
+            FMODUnity.RuntimeManager.PlayOneShot(openInventoryEventPath, transform.position);
         }
     }
     public void HideAllTabs()

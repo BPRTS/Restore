@@ -15,6 +15,10 @@ public class EncyclopediaEntry : MonoBehaviour
     GameObject obj;
     GameObject makeParent;
 
+    //FMOD Trigger
+    public string fmodOpenEncyclopediaEvent = ("event:/MenuSound/Confirm");
+    public string fmodCloseEncyclopediaEvent = ("event:/MenuSound/Cancel");
+
     public void ListEntry()
     {
 
@@ -50,6 +54,8 @@ public class EncyclopediaEntry : MonoBehaviour
             makeParent.transform.SetParent(infoParent.transform);
             makeParent.AddComponent<RectTransform>();
             makeParent.GetComponent<RectTransform>().localPosition = new Vector3(-251, -279, 0);
+
+            FMODUnity.RuntimeManager.PlayOneShot(fmodOpenEncyclopediaEvent);
         }
     }
 
@@ -59,6 +65,8 @@ public class EncyclopediaEntry : MonoBehaviour
         for (int i = 0; i < parents.Length; i++)
         {
             Destroy(parents[i]);
+            
+            FMODUnity.RuntimeManager.PlayOneShot(fmodCloseEncyclopediaEvent);
         }
     }
 }

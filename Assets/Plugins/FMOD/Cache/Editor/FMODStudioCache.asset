@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
-  lastModified: 638215864029254749
+  lastModified: 638220847776177520
   FileSizes:
   - Name: Desktop
     Value: 17120
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638220847644152584
+  lastModified: 638220847775550131
   FileSizes:
   - Name: Desktop
     Value: 1658
@@ -217,7 +217,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Inventory.bank
   Name: Inventory
   StudioPath: bank:/Inventory
-  lastModified: 638220847644067678
+  lastModified: 638220847777970366
   FileSizes:
   - Name: Desktop
     Value: 229984
@@ -237,7 +237,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638220847644172535
+  lastModified: 638220847775560150
   FileSizes:
   - Name: Desktop
     Value: 1878
@@ -308,7 +308,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638220847644282295
+  lastModified: 638220847777153378
   FileSizes:
   - Name: Desktop
     Value: 796192
@@ -440,7 +440,7 @@ MonoBehaviour:
   - {fileID: -7128617541098206906}
   StringsBanks:
   - {fileID: -5667104308102958027}
-  cacheTime: 638220847644282295
+  cacheTime: 638220847777970366
   cacheVersion: 131603
 --- !u!114 &516307037222250647
 MonoBehaviour:
@@ -457,7 +457,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/MenuUI.bank
   Name: MenuUI
   StudioPath: bank:/MenuUI
-  lastModified: 638220847644182503
+  lastModified: 638220847777435809
   FileSizes:
   - Name: Desktop
     Value: 36480
@@ -477,7 +477,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Item Pickup.bank
   Name: Item Pickup
   StudioPath: bank:/Item Pickup
-  lastModified: 638220847644132641
+  lastModified: 638220847776871695
   FileSizes:
   - Name: Desktop
     Value: 329824
@@ -551,7 +551,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Background Audio.bank
   Name: Background Audio
   StudioPath: bank:/Background Audio
-  lastModified: 638220847644047727
+  lastModified: 638220847775960633
   FileSizes:
   - Name: Desktop
     Value: 2389152
