@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
+    
     [Header("Quest Variables")]
     public PopUpWindow popUpWindow;
     public InventoryObject inventory;
@@ -13,6 +14,8 @@ public class QuestManager : MonoBehaviour
     public Toggle bottleQuest;
     public ItemObject q01Reward;
     public int q01RewardAmt;
+    private bool bottleComplete;
+    public InventorySlot bottleItem;
 
     [Header("Repair Oxygen")]
     public ItemObject q02Reward;
@@ -27,12 +30,15 @@ public class QuestManager : MonoBehaviour
     //TODO CALL THIS 
     public void BottleQuest()
     {
-        bottleQuest.isOn = true;
-        questName = "Collect Bottles";
+        //bool: IF amount in inventory > 0
+        if(bottleComplete)
+        { 
+            bottleQuest.isOn = true;
+            questName = "Collect Bottles";
 
-        inventory.AddItem(new Item(q01Reward), 1);
-        popUpWindow.AddToQueue($"{questName} Quest Complete! You have gotten {q01RewardAmt} {q01Reward.itemName}");
-
+            inventory.AddItem(new Item(q01Reward), 1);
+            popUpWindow.AddToQueue($"{questName} Quest Complete! You have gotten {q01RewardAmt} {q01Reward.itemName}");
+        }
 
     }
    public void RepairOxygen()
@@ -44,5 +50,15 @@ public class QuestManager : MonoBehaviour
     public void CraftAnItem()
     {
         popUpWindow.AddToQueue($"Quest Complete! You have gotten {q03RewardAmt} {q03Reward.itemName}");
+    }
+
+    public void Update()
+    {
+        //Check inventory to see if item amount is greater than zero
+        var amount = inventory.ContainsAmount(bottleItem.GetItem());
+        if(amount > 0)
+        { 
+            bottleComplete = true;
+        }
     }
 }
