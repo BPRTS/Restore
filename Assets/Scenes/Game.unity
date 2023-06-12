@@ -19430,6 +19430,7 @@ MonoBehaviour:
   groundCheck: {fileID: 829373309}
   popUpWindow: {fileID: 341249710}
   inventoryTabs: {fileID: 10384481}
+  tutorialSequence: {fileID: 1037099733}
   speed: 12
   gravity: -9.81
   jumpHeight: 3

@@ -32,7 +32,6 @@ public class PopUpWindow : MonoBehaviour
 
     public void ClosePopup()
     {
-        Debug.Log("Close");
         popupAnimator.SetTrigger("End");
     }
 
@@ -50,7 +49,11 @@ public class PopUpWindow : MonoBehaviour
         {
             ShowPopup(popupQueue.Dequeue());
             do
+<<<<<<< Updated upstream
             { 
+=======
+            {
+>>>>>>> Stashed changes
                 yield return null;
 
             } while (!popupAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"));

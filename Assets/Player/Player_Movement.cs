@@ -12,7 +12,7 @@ public class Player_Movement : MonoBehaviour
     public PopUpWindow popUpWindow;
 
     public InventoryTabs inventoryTabs;
-
+    public TutorialSequence tutorialSequence;
 
     public float speed = 12f;
     [SerializeField]
@@ -73,10 +73,14 @@ public class Player_Movement : MonoBehaviour
         Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
         if (isWalking)
         {
+<<<<<<< Updated upstream
             if(tutorialSequence.stage == 0)
             {
                 tutorialSequence.stage = 1;
             }
+=======
+            tutorialSequence.stage = 1;
+>>>>>>> Stashed changes
             inventoryTabs.HideAllTabs();
             targetRotation = Quaternion.LookRotation(move) ;
             targetRotation *= Quaternion.Euler(0f, 180f, 0f);
