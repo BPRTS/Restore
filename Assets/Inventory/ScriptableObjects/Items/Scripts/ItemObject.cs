@@ -19,6 +19,7 @@ public abstract class ItemObject : ScriptableObject
     public string description;
     [TextArea(5, 5)] 
     public string searchSuggestion;
+
 }
 
 [System.Serializable]
@@ -31,4 +32,5 @@ public class Item
         Name = item.name;
         Id = item.Id;
     }
+
 }

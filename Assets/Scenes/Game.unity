@@ -280,7 +280,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 10384480}
-  - component: {fileID: 10384481}
   - component: {fileID: 10384482}
   m_Layer: 5
   m_Name: GameMenu
@@ -288,7 +287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &10384480
 RectTransform:
   m_ObjectHideFlags: 0
@@ -302,9 +301,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 795594110}
-  - {fileID: 184569413}
-  - {fileID: 984983119}
-  - {fileID: 313262848}
+  - {fileID: 950947156}
   m_Father: {fileID: 388657291}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -313,32 +310,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 41}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &10384481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10384479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b60c37c056a8f429b5c5a71f1f917d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  burgerbutton: {fileID: 795594109}
-  tabMenu: {fileID: 184569412}
-  tabContent1: {fileID: 1690104839}
-  tabContent2: {fileID: 1405900775}
-  tabContent3: {fileID: 392921613}
-  tabContent4: {fileID: 148226483}
-  tabClose: {fileID: 1561791011}
-  buttonSettings: {fileID: 682908943}
-  buttonHome: {fileID: 1431613422}
-  buttonQuests: {fileID: 444725255}
-  activeInventory: 1
-  questUI: {fileID: 762900435}
-  openInventoryEventPath: 
-  closeInventoryEventPath: 
 --- !u!95 &10384482
 Animator:
   serializedVersion: 4
@@ -8982,7 +8953,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184569412}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8992,8 +8963,8 @@ RectTransform:
   - {fileID: 1735100279}
   - {fileID: 682932813}
   - {fileID: 453121160}
-  m_Father: {fileID: 10384480}
-  m_RootOrder: 1
+  m_Father: {fileID: 950947156}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11048,7 +11019,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313262847}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11056,12 +11027,12 @@ RectTransform:
   - {fileID: 1431613423}
   - {fileID: 682908944}
   - {fileID: 1561791012}
-  m_Father: {fileID: 10384480}
-  m_RootOrder: 3
+  m_Father: {fileID: 984983119}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.020462036, y: -566}
+  m_AnchoredPosition: {x: -26.474533, y: -547.827}
   m_SizeDelta: {x: 677.9591, y: 114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &314426480
@@ -12915,7 +12886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00002670288}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 770.02, y: 956.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &392921615
@@ -14048,7 +14019,7 @@ GameObject:
   - component: {fileID: 444725257}
   m_Layer: 5
   m_Name: Q_MenuButton
-  m_TagString: Untagged
+  m_TagString: PopButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14349,7 +14320,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: ShowTab4
         m_Mode: 1
@@ -17926,9 +17897,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
-        m_MethodName: GoSettings
+        m_MethodName: GoHome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18072,7 +18043,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: ShowTab3
         m_Mode: 1
@@ -19435,7 +19406,7 @@ MonoBehaviour:
   controller: {fileID: 721652002}
   groundCheck: {fileID: 829373309}
   popUpWindow: {fileID: 341249710}
-  inventoryTabs: {fileID: 10384481}
+  inventoryTabs: {fileID: 0}
   tutorialSequence: {fileID: 1037099733}
   speed: 12
   gravity: -9.81
@@ -20452,7 +20423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &762900434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20489,12 +20460,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonQuests: {fileID: 444725255}
   questScreen: {fileID: 1407981309}
-  invTabs: {fileID: 10384481}
-  menuActive: 0
-  newQuest: 0
-  questCount: 0
+  invTabs: {fileID: 950947157}
   questActiveIcon: {fileID: 21300000, guid: 9ebe3744584f48d45b85bd3404ea94f0, type: 3}
   noQuestIcon: {fileID: 21300000, guid: eead6bcec21fe0541b491d580a80cf55, type: 3}
+  menuActive: 0
 --- !u!1 &767377084
 GameObject:
   m_ObjectHideFlags: 0
@@ -20977,7 +20946,7 @@ GameObject:
   - component: {fileID: 795594111}
   m_Layer: 5
   m_Name: BurgerButton
-  m_TagString: Untagged
+  m_TagString: PopButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21046,7 +21015,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: ToggleInventory
         m_Mode: 1
@@ -24850,6 +24819,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4124102429301874045, guid: 509d794bfbaa03e4dbe1577170755f43, type: 3}
   m_PrefabInstance: {fileID: 950236555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &950947155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950947156}
+  - component: {fileID: 950947157}
+  m_Layer: 5
+  m_Name: MenuWindow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &950947156
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950947155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 184569413}
+  - {fileID: 984983119}
+  m_Father: {fileID: 10384480}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &950947157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950947155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b60c37c056a8f429b5c5a71f1f917d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burgerbutton: {fileID: 795594109}
+  tabMenu: {fileID: 184569412}
+  tabContent1: {fileID: 1690104839}
+  tabContent2: {fileID: 1405900775}
+  tabContent3: {fileID: 392921613}
+  tabContent4: {fileID: 148226483}
+  tabClose: {fileID: 1561791011}
+  buttonSettings: {fileID: 682908943}
+  buttonHome: {fileID: 1431613422}
+  buttonQuests: {fileID: 444725255}
+  activeInventory: 1
+  contentWindow: {fileID: 950947155}
+  openInventoryEventPath: 
+  closeInventoryEventPath: 
 --- !u!1001 &952927741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25975,7 +26009,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984983118}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25984,12 +26018,13 @@ RectTransform:
   - {fileID: 1690104840}
   - {fileID: 1405900776}
   - {fileID: 392921614}
-  m_Father: {fileID: 10384480}
-  m_RootOrder: 2
+  - {fileID: 313262848}
+  m_Father: {fileID: 950947156}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.494995, y: -18.173004}
+  m_AnchoredPosition: {x: 26.494995, y: -18.172974}
   m_SizeDelta: {x: 735.99286, y: 914.20355}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &987322737
@@ -27035,7 +27070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1014386162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30094,7 +30129,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: ShowTab1
         m_Mode: 1
@@ -34720,7 +34755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.090996, y: -0.00002670288}
+  m_AnchoredPosition: {x: -7.090996, y: 0}
   m_SizeDelta: {x: 755.18, y: 956.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405900777
@@ -35050,7 +35085,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: GoHome
         m_Mode: 1
@@ -37761,7 +37796,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: closeButton
         m_Mode: 1
@@ -40262,7 +40297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.315186, y: -10.276827}
+  m_AnchoredPosition: {x: -8.315186, y: -10.276855}
   m_SizeDelta: {x: 752.6182, y: 934.7598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690104841
@@ -41353,7 +41388,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 10384481}
+      - m_Target: {fileID: 950947157}
         m_TargetAssemblyTypeName: InventoryTabs, Assembly-CSharp
         m_MethodName: ShowTab2
         m_Mode: 1

@@ -9,6 +9,7 @@ public class CraftClass : ScriptableObject
     public InventorySlot[] inputItems;
     public InventorySlot outputItem;
 
+    //Check inventory object for required input items 
     public bool CanCraft(InventoryObject inventory)
     {
         for (int i = 0; i < inputItems.Length; i++)
@@ -30,7 +31,6 @@ public class CraftClass : ScriptableObject
 
         }
         //add output item to inventory
-        /*craftinventory.AddCraftItems(outputItem.GetItem(), outputItem.GetAmount());*/
         inventory.AddItem(outputItem.GetItem(), outputItem.GetAmount());
     }
 

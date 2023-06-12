@@ -30,7 +30,7 @@ public class QuestManager : MonoBehaviour
     //TODO CALL THIS 
     public void BottleQuest()
     {
-        //bool: IF amount in inventory > 0
+        //bool states IF amount in inventory > 0, logic on BottleCheck() method
         if(bottleComplete)
         { 
             bottleQuest.isOn = true;
@@ -54,10 +54,15 @@ public class QuestManager : MonoBehaviour
 
     public void Update()
     {
+        BottleCheck();
+    }
+
+    public void BottleCheck()
+    {
         //Check inventory to see if item amount is greater than zero
         var amount = inventory.ContainsAmount(bottleItem.GetItem());
-        if(amount > 0)
-        { 
+        if (amount > 0)
+        {
             bottleComplete = true;
         }
     }

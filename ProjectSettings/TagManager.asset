@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WorldSpaceCanvas
   - ParentInfo
+  - PopButton
   layers:
   - Default
   - TransparentFX

@@ -24,8 +24,8 @@ public class InventoryTabs : MonoBehaviour
 
     public GameObject buttonQuests;
 
-    public bool activeInventory = true;
-    public QuestUI questUI;
+    public bool activeInventory;
+    public GameObject contentWindow;
 
     //FMOD TriggerPaths
     
@@ -48,19 +48,7 @@ public class InventoryTabs : MonoBehaviour
 
     }
 
-    public void Update()
-    {
-        if(!activeInventory)
-        {
-            burgerbutton.SetActive(true);
-        }
-        else
-        {
-            burgerbutton.SetActive(false);
-        }
 
-
-    }
     
     public void ToggleInventory()
     {

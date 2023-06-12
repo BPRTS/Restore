@@ -14,6 +14,8 @@ public class InventoryObject : ScriptableObject
     public ItemDatabaseObject database;
     public Inventory Container;
 
+    //Check if item already exists in inventory (if so, add to stack).
+    //If item does not exist in inventory, create new inventory slot for item.
     public void AddItem(Item _item, int _amount)
     {
         for (int i = 0; i < Container.Items.Count; i++)
@@ -26,22 +28,7 @@ public class InventoryObject : ScriptableObject
         }
         Container.Items.Add(new InventorySlot(_item.Id, _item, _amount));
     }
-    /*    public void RemoveItem(Item _item, int _amount)
-        {
-
-            for (int i = 0; i < Container.Items.Count; i++)
-            {
-                if (Container.Items[i].item.Id == _item.Id)
-                {
-                    if(Container.Items[i].amount > _amount)
-                    {
-                        Container.Items[i].RemoveAmount(_amount);
-                    }
-                    return;
-                }
-            }*/
-    /*Container.Items.Remove(new InventorySlot(_item.Id, _item, _amount));*/
-    /*    }*/
+ 
     #region Save Functionality
     [ContextMenu("Save")]
     public void Save()
@@ -68,6 +55,9 @@ public class InventoryObject : ScriptableObject
         Container = new Inventory();
     }
     #endregion
+
+    //Check if inventory contains item.
+    //When calling this, right now it needs to pull from InventorySlot instead of ItemObject
     public bool Contains(Item item, int amount)
     {
         for (int i = 0; i < Container.Items.Count; i++)
@@ -77,6 +67,9 @@ public class InventoryObject : ScriptableObject
         }
         return false;
     }
+    //Check inventory and return amount
+    //When calling this, right now it needs to pull from InventorySlot instead of ItemObject
+
     public int ContainsAmount(Item item)
     {
         for (int i = 0; i < Container.Items.Count; i++)
@@ -86,6 +79,7 @@ public class InventoryObject : ScriptableObject
         }
         return 0;
     }
+
     public bool RemoveCraftItems(Item item, int amount)
     {
         for (int i = 0; i < Container.Items.Count; i++)
