@@ -31,6 +31,8 @@ public class Player_Movement : MonoBehaviour
     public Transform playerModel;
     private Quaternion targetRotation;
 
+    public GameObject burgerbutton;
+
 
 //    public WarningManager warningManager;
 
@@ -39,6 +41,17 @@ public class Player_Movement : MonoBehaviour
         playerInput = new Player();
         controller = GetComponent<CharacterController>();
         playerAnimator = this.GetComponentInChildren<Animator>();
+
+        if (PlayerPrefs.GetString("ButtonSide") == "Right")
+        {
+            Debug.Log("Right");
+            burgerbutton.transform.localPosition = new Vector3(390f, -901f, 0f);
+        }
+        else if (PlayerPrefs.GetString("ButtonSide") == "Left")
+        {
+            Debug.Log("Left");
+            burgerbutton.transform.localPosition = new Vector3(-337f, -901f, 0f);
+        }
     }
     public void OnEnable()
     {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,11 +20,15 @@ public class QuestUI : MonoBehaviour
 
     public TutorialSequence tutorialSequence;
 
+    private Image questIndicatorImage;
+    private Animator questIndicatorAnimator;
 
     void Start()
     {
         //Set Quest tracker button to active at start
         //questCount & newQuest should be overwritten in code, but setting as is for demo purposes
+        questIndicatorImage = transform.GetChild(0).transform.GetChild(0).GetComponent<Image>();
+        questIndicatorAnimator = transform.GetChild(0).transform.GetChild(0).GetComponent<Animator>(); 
         questScreen.SetActive(false); 
         buttonQuests.SetActive(true);
         questCount = 1;
@@ -32,12 +37,12 @@ public class QuestUI : MonoBehaviour
 
    public void Update()
     {
-        if(newQuest)
         
         // check if the menu or quest window is active
 /*        if(menuActive || invTabs.activeInventory)*/
     if(questScreen.activeSelf || invTabs.contentWindow.activeSelf)
         {
+                //Debug.Log("AAAAAAAA");
             buttonQuests.SetActive(false);
         }
         else
@@ -49,15 +54,17 @@ public class QuestUI : MonoBehaviour
         //If New Quest, change icon to active and set timed animation
         if (newQuest)
         {
-            GameObject.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
-            Delay -= Time.deltaTime;
 
-            if (Delay <= 0 && newQuest)
-            {
-                GameObject.Find("QuestIndicator").GetComponent<Animator>().Play("animate");
+            questIndicatorImage.sprite = questActiveIcon;
+                Delay -= Time.deltaTime;
+
+                if (Delay <= 0 && newQuest)
+                {
+                questIndicatorAnimator.Play("animate");
                 Delay = 7f;
 
-            }
+                }
+            
         }
         else {
             if (!menuActive)

@@ -39,18 +39,7 @@ public class InventoryTabs : MonoBehaviour
 
     public void Start()
     {
-        ToggleInventory();
-        if (PlayerPrefs.GetString("ButtonSide") == "Right")
-        {
-            Debug.Log("Right");
-            burgerbutton.transform.localPosition = new Vector3(390f, -901f, 0f);
-        }
-        else if (PlayerPrefs.GetString("ButtonSide") == "Left")
-        {
-            Debug.Log("Left");
-            burgerbutton.transform.localPosition = new Vector3(-337f, -901f, 0f);
-        }
-
+        //ToggleInventory();
     }
 
 
@@ -59,7 +48,7 @@ public class InventoryTabs : MonoBehaviour
     {
         if (activeInventory)
         {
-            
+            Debug.Log("I am Open!");
             HideAllTabs();
 
           /*  if (tutorialSequence.stage == 3)
@@ -71,6 +60,7 @@ public class InventoryTabs : MonoBehaviour
         }
         else
         {
+            Debug.Log("I am closed!");
             ShowTabMenu();
             //FMOD Trigger Opening Inventory
             FMODUnity.RuntimeManager.PlayOneShot(openInventoryEventPath, transform.position);
@@ -98,6 +88,7 @@ public class InventoryTabs : MonoBehaviour
     public void ShowTabMenu()
     {
         HideAllTabs();
+        contentWindow.SetActive(true);
         tabMenu.SetActive(true);
         tabClose.SetActive(true);
         buttonSettings.SetActive(true);
@@ -123,15 +114,23 @@ public class InventoryTabs : MonoBehaviour
         HideAllTabs();
         tabContent2.SetActive(true);
         tabClose.SetActive(true);
+<<<<<<< Updated upstream
         contentWindow.SetActive (true);
 
+=======
+        contentWindow.SetActive(true);
+>>>>>>> Stashed changes
     }
     public void ShowTab3()
     {
         HideAllTabs();
         tabContent3.SetActive(true);
         tabClose.SetActive(true);
+<<<<<<< Updated upstream
         contentWindow.SetActive(true);  
+=======
+        contentWindow.SetActive(true);
+>>>>>>> Stashed changes
     }
     public void ShowTab4()
     {

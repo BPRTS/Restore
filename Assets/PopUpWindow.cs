@@ -32,6 +32,7 @@ public class PopUpWindow : MonoBehaviour
 
     public void ClosePopup()
     {
+        Debug.Log("we are actually getting here right");
         popupAnimator.SetTrigger("End");
     }
 
