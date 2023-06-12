@@ -80,11 +80,18 @@ public class TutorialSequence : MonoBehaviour
             
             stageflags[4] = true;
             textbox.text = text[4];
+            StartCoroutine(closeTutorial());
         }
         /*else if (stage <=4)
         {
             Debug.Log(stage);
         }*/
+    }
+
+    private IEnumerator closeTutorial()
+    {
+        yield return new WaitForSeconds(5);
+        transform.gameObject.SetActive(false);
     }
 }
 

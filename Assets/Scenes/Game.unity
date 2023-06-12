@@ -19481,6 +19481,7 @@ MonoBehaviour:
   isBreathing: 0
   oxygenBar: {fileID: 2093294834}
   playerModel: {fileID: 1655449898}
+  burgerbutton: {fileID: 795594109}
 --- !u!114 &721652005
 MonoBehaviour:
   m_ObjectHideFlags: 0
