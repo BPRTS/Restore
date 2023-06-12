@@ -86,6 +86,7 @@ public class InventoryTabs : MonoBehaviour
         tabClose.SetActive(false);
         buttonSettings.SetActive(false);
         buttonHome.SetActive(false);
+        contentWindow.SetActive(false);
         activeInventory = false;
 
        /* if(questsAppear)
@@ -101,6 +102,7 @@ public class InventoryTabs : MonoBehaviour
         tabClose.SetActive(true);
         buttonSettings.SetActive(true);
         buttonHome.SetActive(true);
+        contentWindow.SetActive(true);
         activeInventory = true;
     }
     public void ShowTab1()
@@ -112,6 +114,7 @@ public class InventoryTabs : MonoBehaviour
         HideAllTabs();
         tabContent1.SetActive(true);
         tabClose.SetActive(true);
+        contentWindow.SetActive(true);
 
     }
 
@@ -120,6 +123,7 @@ public class InventoryTabs : MonoBehaviour
         HideAllTabs();
         tabContent2.SetActive(true);
         tabClose.SetActive(true);
+        contentWindow.SetActive (true);
 
     }
     public void ShowTab3()
@@ -127,12 +131,14 @@ public class InventoryTabs : MonoBehaviour
         HideAllTabs();
         tabContent3.SetActive(true);
         tabClose.SetActive(true);
+        contentWindow.SetActive(true);  
     }
     public void ShowTab4()
     {
         HideAllTabs();
         tabContent4.SetActive(true);
         tabClose.SetActive(true);
+        contentWindow.SetActive(true);
     }
     public void closeButton()
     { 

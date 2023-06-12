@@ -19215,7 +19215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718000625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9d677f1681015749b15c436eec6d880, type: 3}
   m_Name: 
@@ -25160,7 +25160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950947156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25197,7 +25197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialSequence: {fileID: 1037099733}
   maincanvas: {fileID: 388657290}
-  burgerbutton: {fileID: 795594109}
+  burgerbutton: {fileID: 0}
   tabMenu: {fileID: 184569412}
   tabContent1: {fileID: 1690104839}
   tabContent2: {fileID: 1405900775}
