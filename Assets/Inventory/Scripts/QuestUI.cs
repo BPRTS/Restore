@@ -13,7 +13,8 @@ public class QuestUI : MonoBehaviour
     public int questCount;
     public Sprite questActiveIcon;
     public Sprite noQuestIcon;
-    private float Delay = 15f;
+    private float Delay = 6f;
+    
 
 
     void Start()
@@ -35,37 +36,44 @@ public class QuestUI : MonoBehaviour
             buttonQuests.SetActive(true);
         }
 
-        Delay -= Time.deltaTime;
 
-        if (Delay <= 0 && newQuest)
-        {
-            transform.Find("QuestIndicator").GetComponent<Animation>().Play("NewQuest");
-            Delay = 3f;
-        }
 
-/*        //If New Quest
+        //If New Quest
         if (newQuest)
-        { 
-            transform.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
-            //plus animation
-        }
-
-        //If Quest Active but not "new"
-        if(questCount>0)
-        { 
-        transform.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
-        }
-        //if No Quest
-        if (questCount == 0)
         {
-            transform.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
-        }*/
+            GameObject.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
+            Delay -= Time.deltaTime;
+
+            if (Delay <= 0 && newQuest)
+            {
+                GameObject.Find("QuestIndicator").GetComponent<Animator>().Play("animate");
+                Delay = 7f;
+
+            }
+        }
+        else {
+            if (!menuActive)
+            //If Quest Active but not "new"
+            {
+                if (questCount > 0)
+                {
+                    GameObject.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
+                }
+                //if No Quest
+                if (questCount == 0)
+                {
+                    transform.Find("QuestIndicator").GetComponent<Image>().sprite = questActiveIcon;
+                }
+            }
+        }
     }
 
     public void OpenQuests()
     {
         questScreen.SetActive(true);
         menuActive = true;
+        newQuest = false;
+        
     }
 
     public void CloseQuests()

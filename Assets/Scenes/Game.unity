@@ -41841,7 +41841,6 @@ GameObject:
   - component: {fileID: 1849648073}
   - component: {fileID: 1849648072}
   - component: {fileID: 1849648075}
-  - component: {fileID: 1849648074}
   m_Layer: 5
   m_Name: QuestIndicator
   m_TagString: Untagged
@@ -41889,7 +41888,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9ebe3744584f48d45b85bd3404ea94f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eead6bcec21fe0541b491d580a80cf55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -41907,21 +41906,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849648070}
   m_CullTransparentMesh: 1
---- !u!111 &1849648074
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849648070}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 5483fd9d83b2350419365fd4fefae457, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &1849648075
 Animator:
   serializedVersion: 4
