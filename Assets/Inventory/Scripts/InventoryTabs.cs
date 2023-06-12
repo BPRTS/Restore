@@ -114,23 +114,17 @@ public class InventoryTabs : MonoBehaviour
         HideAllTabs();
         tabContent2.SetActive(true);
         tabClose.SetActive(true);
-<<<<<<< Updated upstream
         contentWindow.SetActive (true);
 
-=======
-        contentWindow.SetActive(true);
->>>>>>> Stashed changes
     }
     public void ShowTab3()
     {
         HideAllTabs();
         tabContent3.SetActive(true);
         tabClose.SetActive(true);
-<<<<<<< Updated upstream
+
         contentWindow.SetActive(true);  
-=======
-        contentWindow.SetActive(true);
->>>>>>> Stashed changes
+
     }
     public void ShowTab4()
     {
