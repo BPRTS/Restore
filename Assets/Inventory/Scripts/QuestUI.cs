@@ -13,7 +13,7 @@ public class QuestUI : MonoBehaviour
     public int questCount;
     public Sprite questActiveIcon;
     public Sprite noQuestIcon;
-    private float Delay = 6f;
+    private float Delay = 2f;
     
 
 
