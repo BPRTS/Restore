@@ -21,7 +21,17 @@ public class VolumeSFXFMOD : MonoBehaviour
 
     public void UpdateVolume()
     {
+        StartCoroutine(ToggleWithDelay());
+    }
+
+    private IEnumerator ToggleWithDelay()
+    {
         float toggleValue = sfxToggle.isOn ? 1f : 0f;
+
+        //Timer to change volume
+
+        yield return new WaitForSeconds(0.1f);
+
         bus.setVolume(toggleValue);
     }
 }

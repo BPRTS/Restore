@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Cat_Bank.bank
   Name: Cat_Bank
   StudioPath: bank:/Cat_Bank
-  lastModified: 638221827354956919
+  lastModified: 638221890240341963
   FileSizes:
   - Name: Desktop
     Value: 17120
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638221827355036991
+  lastModified: 638221890246934962
   FileSizes:
   - Name: Desktop
     Value: 2186
@@ -217,7 +217,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Inventory.bank
   Name: Inventory
   StudioPath: bank:/Inventory
-  lastModified: 638221827355006965
+  lastModified: 638221890243261997
   FileSizes:
   - Name: Desktop
     Value: 353504
@@ -237,10 +237,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638221827355047005
+  lastModified: 638221890246970160
   FileSizes:
   - Name: Desktop
-    Value: 2160
+    Value: 2518
   Exists: 1
 --- !u!114 &-3589724250478494845
 MonoBehaviour:
@@ -269,6 +269,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3396821091336118950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass/Grass
+  m_EditorClassIdentifier: 
+  Name: Grass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 199651125
+    data2: 442393468
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-3123281020941498558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +317,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-3089919556587204123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Stone/Stone
+  m_EditorClassIdentifier: 
+  Name: Stone
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 274942404
+    data2: 2841477564
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2182279619764190956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +356,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638221827355067017
+  lastModified: 638221890249256606
   FileSizes:
   - Name: Desktop
     Value: 796192
@@ -421,6 +469,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-19864003992244307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Walking.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Restore Audio/Build/Desktop/Walking.bank
+  Name: Walking
+  StudioPath: bank:/Walking
+  lastModified: 638221890258958032
+  FileSizes:
+  - Name: Desktop
+    Value: 796896
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +510,7 @@ MonoBehaviour:
   - {fileID: -2182279619764190956}
   - {fileID: -5762211406014024980}
   - {fileID: 516307037222250647}
+  - {fileID: -19864003992244307}
   EditorEvents:
   - {fileID: -723597751631200638}
   - {fileID: -5786476919409961964}
@@ -465,6 +534,10 @@ MonoBehaviour:
   - {fileID: 1346120538953413126}
   - {fileID: 2272432106052726153}
   - {fileID: -1679664960227756421}
+  - {fileID: 1504019799395111787}
+  - {fileID: 3813187893733957965}
+  - {fileID: 6154232603562653591}
+  - {fileID: 2059904682736043004}
   EditorParameters:
   - {fileID: -3123281020941498558}
   - {fileID: 8758267556595306408}
@@ -472,7 +545,7 @@ MonoBehaviour:
   - {fileID: -7128617541098206906}
   StringsBanks:
   - {fileID: -5667104308102958027}
-  cacheTime: 638221827355067017
+  cacheTime: 638221890258958032
   cacheVersion: 131603
 --- !u!114 &516307037222250647
 MonoBehaviour:
@@ -489,10 +562,10 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/MenuUI.bank
   Name: MenuUI
   StudioPath: bank:/MenuUI
-  lastModified: 638221827355047005
+  lastModified: 638221890248236766
   FileSizes:
   - Name: Desktop
-    Value: 36480
+    Value: 37440
   Exists: 1
 --- !u!114 &715890192014891742
 MonoBehaviour:
@@ -548,6 +621,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1504019799395111787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MenuSound/SFXTurnOffSwitch
+  m_EditorClassIdentifier: 
+  Path: event:/MenuSound/SFXTurnOffSwitch
+  Guid:
+    Data1: 1729540261
+    Data2: 1103356832
+    Data3: 2008572071
+    Data4: 1502239950
+  Banks:
+  - {fileID: 516307037222250647}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2059904682736043004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walking/Grass
+  m_EditorClassIdentifier: 
+  Path: event:/Walking/Grass
+  Guid:
+    Data1: 888501986
+    Data2: 1340293396
+    Data3: 1929634482
+    Data4: -1021934423
+  Banks:
+  - {fileID: -19864003992244307}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3396821091336118950}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14000
 --- !u!114 &2272432106052726153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +718,7 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Item Pickup.bank
   Name: Item Pickup
   StudioPath: bank:/Item Pickup
-  lastModified: 638221827355036991
+  lastModified: 638221890246874531
   FileSizes:
   - Name: Desktop
     Value: 489600
@@ -649,6 +777,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3678156118375010765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sand/Sand
+  m_EditorClassIdentifier: 
+  Name: Sand
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3397277700
+    data2: 1499481
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3795868774100185168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,11 +816,39 @@ MonoBehaviour:
   Path: FMOD/Restore Audio/Build/Desktop/Background Audio.bank
   Name: Background Audio
   StudioPath: bank:/Background Audio
-  lastModified: 638221827354946900
+  lastModified: 638221890239409742
   FileSizes:
   - Name: Desktop
     Value: 2389152
   Exists: 1
+--- !u!114 &3813187893733957965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walking/Sand
+  m_EditorClassIdentifier: 
+  Path: event:/Walking/Sand
+  Guid:
+    Data1: -1186081456
+    Data2: 1225755379
+    Data3: -1868762493
+    Data4: 1779243963
+  Banks:
+  - {fileID: -19864003992244307}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3678156118375010765}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19000
 --- !u!114 &5003285905590305853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,6 +903,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6154232603562653591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Walking/Stone
+  m_EditorClassIdentifier: 
+  Path: event:/Walking/Stone
+  Guid:
+    Data1: -1939912582
+    Data2: 1223211336
+    Data3: -2066533217
+    Data4: -954879648
+  Banks:
+  - {fileID: -19864003992244307}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3089919556587204123}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27500
 --- !u!114 &6249625797526567425
 MonoBehaviour:
   m_ObjectHideFlags: 0
