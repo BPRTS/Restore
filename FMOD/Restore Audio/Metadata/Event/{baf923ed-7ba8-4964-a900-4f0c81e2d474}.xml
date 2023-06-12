@@ -101,7 +101,6 @@
 		<property name="timelockedOffset">
 			<value>3.0000000000000009</value>
 		</property>
-		<property name="name" />
 		<relationship name="audioFile">
 			<destination>{0028cc35-2ea3-4efc-b759-4c52bde72dbe}</destination>
 		</relationship>
@@ -125,7 +124,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>142</value>
+			<value>141.00000000000006</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{57c77e08-221e-4817-8bbf-feeeced349a0}</destination>
