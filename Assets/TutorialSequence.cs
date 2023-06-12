@@ -6,21 +6,24 @@ using UnityEngine;
 public class TutorialSequence : MonoBehaviour
 {
     public Canvas maincanvas;
-
+    public InventoryObject inventory;
+    public InventorySlot bottleItem;
+    public GameObject invisibleWalls;
+    public InventorySlot nylonItem;
 
     private List<string> text = new List<string>()
     { 
-        "How to move",
-        "text2",
-        "text3",
-        "text4"
+        "0", //Movement
+        "1", //Pick Up
+        "2", //Open Inventory
+        "3", //Craft
+        "4" //Tutorial End
     };
     public TMP_Text textbox;
     public int stage = 0;
-    private Coroutine coroutineChecker;
     private List<bool> stageflags = new List<bool>()
     {
-        false, false, false, false
+        false, false, false, false, false
     };
 
     // Start is called before the first frame update
@@ -32,34 +35,56 @@ public class TutorialSequence : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if(stage == 0 && !stageflags[0])
+
+        if(stage == 1 && inventory.ContainsAmount(bottleItem.GetItem()) >=1)
+        {
+            stage = 2;
+        }
+
+        if(stage == 3 && inventory.ContainsAmount(nylonItem.GetItem()) >= 1)
+        {
+            stage = 4;
+        }
+
+
+        //Move
+        if (stage == 0 && !stageflags[0])
         {
             stageflags[0] = true;
             textbox.text = text[0];
             maincanvas.transform.GetChild(0).gameObject.SetActive(true);
         }
-     else if (stage == 1 && !stageflags[1])
-            {
+        //pick up item
+        else if (stage == 1 && !stageflags[1])
+        {
             stageflags[1] = true;
             textbox.text = text[1];
         }
-     else if (stage == 2 && !stageflags[2])
+        //open inventory
+        else if (stage == 2 && !stageflags[2])
         {
+            invisibleWalls.SetActive(false);
             stageflags[2] = true;
             textbox.text = text[2];
-
-
-        }
-     else if (stage == 2 && !stageflags[2])
-        {
-            stageflags[1] = true;
-            textbox.text = text[1];
             maincanvas.transform.GetChild(1).gameObject.SetActive(true);
         }
-        else
+        //craft
+        else if (stage == 3 && !stageflags[3])
+        {
+            stageflags[3] = true;
+            textbox.text = text[3];
+        }
+        //End
+        else if (stage == 4 && !stageflags[4])
+        {
+            
+            stageflags[4] = true;
+            textbox.text = text[4];
+        }
+        /*else if (stage <=4)
         {
             Debug.Log(stage);
-        }
+        }*/
     }
 }
 

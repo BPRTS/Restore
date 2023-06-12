@@ -17,6 +17,7 @@ public class QuestUI : MonoBehaviour
     private bool newQuest;
     private int questCount;
 
+    public TutorialSequence tutorialSequence;
 
 
     void Start()
@@ -27,7 +28,6 @@ public class QuestUI : MonoBehaviour
         buttonQuests.SetActive(true);
         questCount = 1;
         newQuest = true;
-        
     }
 
    public void Update()
@@ -81,6 +81,11 @@ public class QuestUI : MonoBehaviour
     // open quest UI screen 
     public void OpenQuests()
     {
+        if(tutorialSequence.stage == 3)
+        {
+            tutorialSequence.stage = 4;
+        }
+
         questScreen.SetActive(true);
         menuActive = true;
         newQuest = false;

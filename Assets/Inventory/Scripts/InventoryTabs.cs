@@ -8,6 +8,9 @@ using System.Runtime.CompilerServices;
 
 public class InventoryTabs : MonoBehaviour
 {
+    public TutorialSequence tutorialSequence;
+    public Canvas maincanvas;
+
     public GameObject burgerbutton;
 
     
@@ -26,6 +29,8 @@ public class InventoryTabs : MonoBehaviour
 
     public bool activeInventory;
     public GameObject contentWindow;
+
+   /* public bool questsAppear = false;*/
 
     //FMOD TriggerPaths
     
@@ -54,7 +59,13 @@ public class InventoryTabs : MonoBehaviour
     {
         if (activeInventory)
         {
+            
             HideAllTabs();
+
+          /*  if (tutorialSequence.stage == 3)
+            {
+                questsAppear = true;
+            }*/
             //FMOD Trigger Closing Inventory
             FMODUnity.RuntimeManager.PlayOneShot(closeInventoryEventPath, transform.position);
         }
@@ -77,6 +88,10 @@ public class InventoryTabs : MonoBehaviour
         buttonHome.SetActive(false);
         activeInventory = false;
 
+       /* if(questsAppear)
+        {
+            maincanvas.transform.GetChild(2).gameObject.SetActive(true);
+        }*/
     }
 
     public void ShowTabMenu()
@@ -90,6 +105,10 @@ public class InventoryTabs : MonoBehaviour
     }
     public void ShowTab1()
     {
+        if(tutorialSequence.stage == 2)
+        {
+            tutorialSequence.stage = 3;
+        }
         HideAllTabs();
         tabContent1.SetActive(true);
         tabClose.SetActive(true);
