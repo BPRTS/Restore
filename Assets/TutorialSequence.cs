@@ -40,7 +40,6 @@ public class TutorialSequence : MonoBehaviour
         }
      else if (stage == 1 && !stageflags[1])
             {
-<<<<<<< Updated upstream
             stageflags[1] = true;
             textbox.text = text[1];
         }
@@ -48,14 +47,13 @@ public class TutorialSequence : MonoBehaviour
         {
             stageflags[2] = true;
             textbox.text = text[2];
-=======
+
 
         }
      else if (stage == 2 && !stageflags[2])
         {
             stageflags[1] = true;
             textbox.text = text[1];
->>>>>>> Stashed changes
             maincanvas.transform.GetChild(1).gameObject.SetActive(true);
         }
         else

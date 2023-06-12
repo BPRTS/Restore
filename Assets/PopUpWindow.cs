@@ -49,13 +49,8 @@ public class PopUpWindow : MonoBehaviour
         {
             ShowPopup(popupQueue.Dequeue());
             do
-<<<<<<< Updated upstream
-            { 
-=======
-            {
->>>>>>> Stashed changes
+            {     
                 yield return null;
-
             } while (!popupAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"));
 
         } while (popupQueue.Count > 0);
