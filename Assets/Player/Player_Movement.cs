@@ -31,6 +31,8 @@ public class Player_Movement : MonoBehaviour
     public Transform playerModel;
     private Quaternion targetRotation;
 
+
+    public TutorialSequence tutorialSequence;
 //    public WarningManager warningManager;
 
     public void Awake()
@@ -71,6 +73,10 @@ public class Player_Movement : MonoBehaviour
         Vector3 move = new Vector3(movementInput.x, 0f, movementInput.y);
         if (isWalking)
         {
+            if(tutorialSequence.stage == 0)
+            {
+                tutorialSequence.stage = 1;
+            }
             inventoryTabs.HideAllTabs();
             targetRotation = Quaternion.LookRotation(move) ;
             targetRotation *= Quaternion.Euler(0f, 180f, 0f);

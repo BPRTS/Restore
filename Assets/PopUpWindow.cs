@@ -50,8 +50,7 @@ public class PopUpWindow : MonoBehaviour
         {
             ShowPopup(popupQueue.Dequeue());
             do
-            {
-                Debug.Log(window.active);
+            { 
                 yield return null;
 
             } while (!popupAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"));
