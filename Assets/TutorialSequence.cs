@@ -13,11 +13,11 @@ public class TutorialSequence : MonoBehaviour
 
     private List<string> text = new List<string>()
     { 
-        "Let's get going! Use the joystick at the bottom of the screen to move.", //Movement
-        "There is a lot of plastic here, but we can use it! Tap on it to pick it up.", //Pick Up
-        "Great! Now that you have some items, let's open your inventory.", //Open Inventory
-        "Items you pick up in the world can be combined to make new ones! Open the Crafting menu.", //Craft
-        "Time to get cleaning up around here. We'll need more resources if we want to expand." //Tutorial End
+        "0", //Movement
+        "1", //Pick Up
+        "2", //Open Inventory
+        "3", //Craft
+        "4" //Tutorial End
     };
     public TMP_Text textbox;
     public int stage = 0;
