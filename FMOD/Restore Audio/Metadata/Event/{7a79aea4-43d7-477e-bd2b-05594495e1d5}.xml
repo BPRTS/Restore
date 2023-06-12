@@ -27,6 +27,7 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{a5512ae7-43b9-498e-af03-11247c2df571}</destination>
+			<destination>{dfa26588-4d43-4079-9bb1-cc8cb0285790}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{5e38cff7-3305-4fbf-adbd-83495d6b268e}</destination>
@@ -64,6 +65,11 @@
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{9fd286fe-08d7-46b3-9788-c35bcfba297c}</destination>
+		</relationship>
+	</object>
+	<object class="GroupTrack" id="{dfa26588-4d43-4079-9bb1-cc8cb0285790}">
+		<relationship name="mixerGroup">
+			<destination>{5304546c-52e5-4dc4-9632-64e9f0ffd7ac}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{5e38cff7-3305-4fbf-adbd-83495d6b268e}">
@@ -119,6 +125,20 @@
 			<destination>{3c6e5b46-c728-40ee-a020-a77d7df953fb}</destination>
 		</relationship>
 	</object>
+	<object class="EventMixerGroup" id="{5304546c-52e5-4dc4-9632-64e9f0ffd7ac}">
+		<property name="name">
+			<value>Audio 2</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{62ab0821-2daf-494e-a4d7-a06e9e93e129}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{ca282c7e-c77d-4b9c-8f6c-333360158f59}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3c6e5b46-c728-40ee-a020-a77d7df953fb}</destination>
+		</relationship>
+	</object>
 	<object class="LoopRegion" id="{1ab6cbcd-4ed2-4cc3-b782-47f168b77c61}">
 		<property name="position">
 			<value>0</value>
@@ -158,6 +178,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{cbac28a3-8b53-47eb-a902-730f18dcc0c2}" />
+	<object class="MixerBusEffectChain" id="{62ab0821-2daf-494e-a4d7-a06e9e93e129}">
+		<relationship name="effects">
+			<destination>{bddd53c1-819b-4b07-8f4d-868b5c039a28}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{ca282c7e-c77d-4b9c-8f6c-333360158f59}" />
 	<object class="MixerBusFader" id="{9a3ef641-d7d7-4414-85b2-d972044adb31}" />
 	<object class="MixerBusFader" id="{0e79fb9f-56e4-4c63-9cec-7cc8f0c05c10}" />
 	<object class="SFXReverbEffect" id="{ab901e6b-3131-4247-880c-6c47c0eb468c}">
@@ -174,4 +200,5 @@
 			<value>-80</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{bddd53c1-819b-4b07-8f4d-868b5c039a28}" />
 </objects>
