@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -33,8 +35,11 @@ public class Player_Movement : MonoBehaviour
 
     public GameObject burgerbutton;
 
+    //walking sound FMOD
+    private FMOD.Studio.EventInstance instance;
 
-//    public WarningManager warningManager;
+
+    //    public WarningManager warningManager;
 
     public void Awake()
     {
@@ -62,7 +67,10 @@ public class Player_Movement : MonoBehaviour
         playerInput.Disable();
     }
 
-
+    void Start()
+    {
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/WalkingGrass");
+    }
 
 
     Vector3 velocity;
@@ -96,10 +104,11 @@ public class Player_Movement : MonoBehaviour
             targetRotation *= Quaternion.Euler(0f, 180f, 0f);
             playerModel.rotation = Quaternion.Lerp(playerModel.rotation, targetRotation, Time.deltaTime * 2);
         }
+        else
+        {
+            instance.start();
+        }
         playerAnimator.SetBool("Walking", isWalking);
-        
-       
-        
         
 
 
