@@ -143,9 +143,6 @@ public class Player_Movement : MonoBehaviour
         }
 
 
-        Debug.Log(isBreathing);
-        Debug.Log(breathingWarning);
-        Debug.Log(tutorialSequence.stage);
       if(!isBreathing && !breathingWarning && tutorialSequence.stage >=1)
         {
             popUpWindow.AddToQueue("You are leaving the Oxygen Zone! Be careful.");

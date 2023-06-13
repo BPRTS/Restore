@@ -9,6 +9,7 @@ public class OxygenBuilding : MonoBehaviour
     // Start is called before the first frame update
     public GameObject oxygenBubble;
     public Transform player;
+    public GameObject buildBubble;
 
     public int materialCost;
     public int timeToBuild = 10;
@@ -33,16 +34,17 @@ public class OxygenBuilding : MonoBehaviour
     void Update()
     {
 
-       /* //if (!rebuilt)
-        //{
+        if (!rebuilt)
+        {
         this.transform.GetChild(0).gameObject.SetActive(true);
     }
         else if(rebuilt)
         {
             this.transform.GetChild(1).gameObject.SetActive(true);
             this.transform.GetChild(0).gameObject.SetActive(false);
+            buildBubble.SetActive(false);
         }
-if (Vector3.Distance(player.position, transform.position) < 12f && !rebuilt)
+/*if (Vector3.Distance(player.position, transform.position) < 12f && !rebuilt)
 {
     if (Input.GetMouseButtonDown(0))
     {
@@ -66,6 +68,8 @@ if (Vector3.Distance(player.position, transform.position) < 12f && !rebuilt)
         // Code to execute after the delay
         rebuilt = true;
         oxygenBubble.SetActive(true);
+
+        Debug.Log("Done");
 
         StartCoroutine(Expand());
         

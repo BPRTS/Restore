@@ -16,6 +16,7 @@ public class QuestManager : MonoBehaviour
     public int q01RewardAmt;
     private bool bottleComplete;
     public InventorySlot bottleItem;
+    private bool q1Complete = false;
 
     [Header("Repair Oxygen")]
     public ItemObject q02Reward;
@@ -25,19 +26,25 @@ public class QuestManager : MonoBehaviour
     public ItemObject q03Reward;
     public int q03RewardAmt;
 
-
+    private int amount = 0;
     private string questName = "Empty! Change this in script.";
     //TODO CALL THIS 
+
+
     public void BottleQuest()
     {
         //bool states IF amount in inventory > 0, logic on BottleCheck() method
         if(bottleComplete)
-        { 
+        {
             bottleQuest.isOn = true;
             questName = "Collect Bottles";
 
             inventory.AddItem(new Item(q01Reward), 1);
-            popUpWindow.AddToQueue($"{questName} Quest Complete! You have gotten {q01RewardAmt} {q01Reward.itemName}");
+            if (!q1Complete)
+            {
+                popUpWindow.AddToQueue($"{questName} Quest Complete! You have gotten {q01RewardAmt} {q01Reward.itemName}");
+                q1Complete = true;
+            }
         }
 
     }
@@ -55,13 +62,17 @@ public class QuestManager : MonoBehaviour
     public void Update()
     {
         BottleCheck();
+        if(bottleComplete)
+        {
+            BottleQuest();
+        }
     }
 
     public void BottleCheck()
     {
         //Check inventory to see if item amount is greater than zero
-        var amount = inventory.ContainsAmount(bottleItem.GetItem());
-        if (amount > 0)
+        amount = inventory.ContainsAmount(bottleItem.GetItem());
+        if (amount >= 5)
         {
             bottleComplete = true;
         }
