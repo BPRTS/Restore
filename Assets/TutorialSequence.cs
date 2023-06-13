@@ -16,7 +16,7 @@ public class TutorialSequence : MonoBehaviour
         "Let's get going! Use the joystick at the bottom of the screen to move.", //Movement
         "There is a lot of plastic here, but we can use it! Tap on it to pick it up.", //Pick Up
         "Great! Now that you have some items, let's open your inventory.", //Open Inventory
-        "Items you pick up in the world can be combined to make new ones! Open the Crafting menu.", //Craft
+        "Now let's use it! Open the crafting menu and make some Nylon Twine.", //Craft
         "Time to get cleaning up around here. We'll need more resources if we want to expand." //Tutorial End
     };
     public TMP_Text textbox;
@@ -44,6 +44,11 @@ public class TutorialSequence : MonoBehaviour
         if(stage == 3 && inventory.ContainsAmount(nylonItem.GetItem()) >= 1)
         {
             stage = 4;
+        }
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            stage++;
         }
 
 
@@ -77,7 +82,7 @@ public class TutorialSequence : MonoBehaviour
         //End
         else if (stage == 4 && !stageflags[4])
         {
-            
+            maincanvas.transform.GetChild(2).gameObject.SetActive(true) ;
             stageflags[4] = true;
             textbox.text = text[4];
             StartCoroutine(closeTutorial());

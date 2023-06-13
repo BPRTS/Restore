@@ -16,6 +16,8 @@ public class Player_Movement : MonoBehaviour
     public InventoryTabs inventoryTabs;
     public TutorialSequence tutorialSequence;
 
+    private bool breathingWarning = false;
+
     public float speed = 12f;
     [SerializeField]
     public float gravity = -9.81f;
@@ -26,7 +28,7 @@ public class Player_Movement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
-    public bool isBreathing = false;
+    public bool isBreathing = true;
     public Slider oxygenBar;
 
     private Animator playerAnimator;
@@ -130,18 +132,25 @@ public class Player_Movement : MonoBehaviour
 
         if(!isBreathing)
         {
-            oxygenBar.value -= 0.001f;
+            oxygenBar.gameObject.SetActive(true);
+            oxygenBar.value -= 0.0005f;
         }
         if(isBreathing)
         {
-            oxygenBar.value += 0.015f;
+            breathingWarning = false;
+            oxygenBar.value = 100f;
+            oxygenBar.gameObject.SetActive(false);
         }
 
-        
-       //if (oxygenBar.value == 0.999f && isBreathing == false)
-        // {s
-        //    popUpWindow.AddToQueue("You are leaving the oxygen zone. Be careful.");
-       //}
+
+        Debug.Log(isBreathing);
+        Debug.Log(breathingWarning);
+        Debug.Log(tutorialSequence.stage);
+      if(!isBreathing && !breathingWarning && tutorialSequence.stage >=1)
+        {
+            popUpWindow.AddToQueue("You are leaving the Oxygen Zone! Be careful.");
+            breathingWarning = true;
+        }
 
        //if(oxygenBar.value == 0.2500097f && isBreathing == false)
         //{
