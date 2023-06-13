@@ -46,12 +46,6 @@ public class TutorialSequence : MonoBehaviour
             stage = 4;
         }
 
-        if(Input.GetMouseButtonDown(0))
-        {
-            stage++;
-        }
-
-
         //Move
         if (stage == 0 && !stageflags[0])
         {
